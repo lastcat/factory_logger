@@ -22,7 +22,7 @@ $ bundle exec rake db:migrate
 
 First, modify your factroy_girl's code as follows,
 
-```
+```ruby
 #@ lib/factory_girl/factory_runnner.rb
 
 instrumentation_payload = { name: @name, strategy: runner_strategy, traits: @traits, overrides: @overrides, factory: factory}
@@ -30,7 +30,7 @@ instrumentation_payload = { name: @name, strategy: runner_strategy, traits: @tra
 
 next, you register notification subscriber.write,
 
-```
+```ruby
 ActiveSupport::Notifications.subscribe("factory_girl.run_factory") do |_name, start, finish, _id, payload| # rubocop:disable ParameterLists
   execution_time_in_seconds = finish - start
 
@@ -54,7 +54,7 @@ There are several class methods, please read `app/models/factory_log.rb`.
 
 If you use `DatabaseCleaner` od `DatabseRewinder` in your testing, plobably you need to setting for excepting to `FactoryLog` model. For example, you wrote like,
 
-```
+```ruby
 config.before(:suite) do
   DatabaseCleaner.strategy = :transaction
   DatabaseCleaner.clean_with(:truncation)
@@ -64,7 +64,7 @@ end
 
 change like this,
 
-```
+```ruby
 config.before(:suite) do
   DatabaseCleaner.strategy = :truncation
   DatabaseCleaner.clean_with(:truncation)
@@ -79,7 +79,7 @@ end
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/factory_inspector/fork )
+1. Fork it ( https://github.com/[my-github-username]/factory_logger/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
