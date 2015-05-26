@@ -3,7 +3,9 @@
 This gem gives you Factory logging model.For more detail, About motivation, please see <blog url>.
 
 [![Code Climate](https://codeclimate.com/github/lastcat/factory_logger/badges/gpa.svg)](https://codeclimate.com/github/lastcat/factory_logger)
-
+[![Build Status](https://travis-ci.org/lastcat/factory_logger.svg?branch=setting_coveralls)](https://travis-ci.org/lastcat/factory_logger)
+https://circleci.com/gh/:lastcat/:factory_logger.png?circle-token=:546904d5f39b06043fe9ba47e600f65275dd8354
+[![Coverage Status](https://coveralls.io/repos/lastcat/factory_logger/badge.svg?branch=setting_coveralls)](https://coveralls.io/r/lastcat/factory_logger?branch=setting_coveralls)
 ## Installation
 
 Add this line to your application's Gemfile:
