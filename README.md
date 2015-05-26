@@ -2,6 +2,8 @@
 
 This gem gives you Factory logging model.For more detail, About motivation, please see <blog url>.
 
+[![Code Climate](https://codeclimate.com/github/lastcat/factory_logger/badges/gpa.svg)](https://codeclimate.com/github/lastcat/factory_logger)
+
 ## Installation
 
 Add this line to your application's Gemfile:
