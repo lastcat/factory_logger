@@ -3,7 +3,7 @@ class CreateFactoryLogs < ActiveRecord::Migration
     create_table :factory_logs do |t|
       t.string :name
       t.text :traits
-      t.text :association
+      t.text :assos
       t.float :time
 
       t.timestamps null: false
