@@ -48,7 +48,7 @@ RSpec.describe FactoryLog, type: :model do
     let(:sample) { factoryAs.first }
 
     it 'return average time factoryAs' do
-      expect(FactoryLog.average_time(sample.name + sample.traits)).to eq ((2.0 * 10) + (0.5 * 7) + (5.0 * 3)) / (10 + 7 +3)
+      expect(FactoryLog.average_time(sample.name + sample.traits)).to eq ((2.0 * 10) + (0.5 * 7) + (5.0 * 3)) / (10 + 7 + 3)
     end
   end
 
