@@ -29,7 +29,7 @@ RSpec.describe FactoryLog, type: :model do
                                               (factoryAs.name + factoryAs.traits),
                                               (factoryAs_with_trait.name + factoryAs_with_trait.traits),
                                               (factoryBs.name + factoryBs.traits)
-                                           ]
+                                            ]
     end
   end
 
@@ -62,13 +62,13 @@ RSpec.describe FactoryLog, type: :model do
     let!(:b_sample) { factoryBs.first }
 
     let!(:a_ranking_data) {
-                          {
-                            name: (a_sample.name + a_sample.traits),
-                            total_time: 2.0 * 10,
-                            count: 10,
-                            average_time: 2.0
+                            {
+                              name: (a_sample.name + a_sample.traits),
+                              total_time: 2.0 * 10,
+                              count: 10,
+                              average_time: 2.0
+                            }
                           }
-                        }
     let!(:a_with_traits_ranking_data) {
                                         {
                                           name: (a_with_traits_sample.name + a_with_traits_sample.traits),
@@ -76,7 +76,7 @@ RSpec.describe FactoryLog, type: :model do
                                           count: 1,
                                           average_time: 2.0
                                         }
-                          }
+                                      }
     let!(:b_ranking_data) {
                             {
                               name: (b_sample.name + b_sample.traits),
@@ -84,7 +84,7 @@ RSpec.describe FactoryLog, type: :model do
                               count: 3,
                               average_time: 10.0
                             }
-                        }
+                          }
 
     it 'ranking about time they took (total)' do
       expect(FactoryLog.time_ranking).to eq [

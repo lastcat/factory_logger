@@ -11,18 +11,18 @@ class FactoryLog < ActiveRecord::Base
       time = log.time
       name = log.name
       traits = log.traits
-      if index = ranking.index{ |cd| cd[:name] == (name + traits) }
+      if index = ranking.index { |cd| cd[:name] == (name + traits) }
         hash_data = ranking[index]
         hash_data[:total_time] += time
         hash_data[:count] += 1
         hash_data[:average_time] = hash_data[:total_time] / hash_data[:count]
       else
-       ranking.push(
+        ranking.push(
                       name: (name + traits),
                       total_time: time,
                       count: 1,
                       average_time: time
-                   )
+                    )
      end
     end
     ranking.sort_by!{|l| l[:total_time]}.reverse
@@ -31,7 +31,7 @@ class FactoryLog < ActiveRecord::Base
   # Return specified factory's average exectuaion time.
   def self.average_time(name_and_traits)
     logs = FactoryLog.log_set_with_trait(name_and_traits)
-    logs.map(&:time).inject{ |sum, n| sum + n } / logs.size
+    logs.map(&:time).inject { |sum, n| sum + n } / logs.size
   end
 
   # Return specified factory's total exectuaion time.
@@ -64,6 +64,6 @@ class FactoryLog < ActiveRecord::Base
 
   # Return all specified factory object(identified factory_name only)
   def self.log_set(factory)
-    FactoryLog.all.select{|log| log.name == factory }
+    FactoryLog.all.select { |log| log.name == factory }
   end
 end
