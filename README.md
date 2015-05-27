@@ -44,6 +44,9 @@ ActiveSupport::Notifications.subscribe("factory_girl.run_factory") do |_name, st
                     time: execution_time_in_seconds)
 end
 ```
+
+(I use [factory_inspector](https://github.com/lastcat/factory_inspector) to get factory's infos.This gem isn't dependent it, You can use or not.)
+
 at `config/initializers/notifications.rb`.
 
 If you want to factory's execution infos, after `rails c -etest`,
