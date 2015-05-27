@@ -7017,3 +7017,1119 @@ Migrating to CreateFactoryLogs (20150525010308)
   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
   [1m[35mFactoryLog Load (0.1ms)[0m  SELECT "factory_logs".* FROM "factory_logs"
   [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.227474"], ["updated_at", "2015-05-27 08:32:51.227474"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.234240"], ["updated_at", "2015-05-27 08:32:51.234240"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.236898"], ["updated_at", "2015-05-27 08:32:51.236898"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.238746"], ["updated_at", "2015-05-27 08:32:51.238746"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.241295"], ["updated_at", "2015-05-27 08:32:51.241295"]]
+  [1m[35m (0.4ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.243252"], ["updated_at", "2015-05-27 08:32:51.243252"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.245608"], ["updated_at", "2015-05-27 08:32:51.245608"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.247459"], ["updated_at", "2015-05-27 08:32:51.247459"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.249226"], ["updated_at", "2015-05-27 08:32:51.249226"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.250667"], ["updated_at", "2015-05-27 08:32:51.250667"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 0.5], ["created_at", "2015-05-27 08:32:51.252525"], ["updated_at", "2015-05-27 08:32:51.252525"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 0.5], ["created_at", "2015-05-27 08:32:51.256016"], ["updated_at", "2015-05-27 08:32:51.256016"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 0.5], ["created_at", "2015-05-27 08:32:51.258139"], ["updated_at", "2015-05-27 08:32:51.258139"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 0.5], ["created_at", "2015-05-27 08:32:51.259944"], ["updated_at", "2015-05-27 08:32:51.259944"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 0.5], ["created_at", "2015-05-27 08:32:51.261409"], ["updated_at", "2015-05-27 08:32:51.261409"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 0.5], ["created_at", "2015-05-27 08:32:51.262651"], ["updated_at", "2015-05-27 08:32:51.262651"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 0.5], ["created_at", "2015-05-27 08:32:51.264062"], ["updated_at", "2015-05-27 08:32:51.264062"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 5.0], ["created_at", "2015-05-27 08:32:51.265941"], ["updated_at", "2015-05-27 08:32:51.265941"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 5.0], ["created_at", "2015-05-27 08:32:51.268111"], ["updated_at", "2015-05-27 08:32:51.268111"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 5.0], ["created_at", "2015-05-27 08:32:51.270174"], ["updated_at", "2015-05-27 08:32:51.270174"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mFactoryLog Load (0.5ms)[0m  SELECT "factory_logs".* FROM "factory_logs"
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.279427"], ["updated_at", "2015-05-27 08:32:51.279427"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.282243"], ["updated_at", "2015-05-27 08:32:51.282243"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.284434"], ["updated_at", "2015-05-27 08:32:51.284434"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.286619"], ["updated_at", "2015-05-27 08:32:51.286619"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.289367"], ["updated_at", "2015-05-27 08:32:51.289367"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.291179"], ["updated_at", "2015-05-27 08:32:51.291179"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.293411"], ["updated_at", "2015-05-27 08:32:51.293411"]]
+  [1m[36m (0.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.295181"], ["updated_at", "2015-05-27 08:32:51.295181"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.297490"], ["updated_at", "2015-05-27 08:32:51.297490"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.299434"], ["updated_at", "2015-05-27 08:32:51.299434"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.302335"], ["updated_at", "2015-05-27 08:32:51.302335"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.304498"], ["updated_at", "2015-05-27 08:32:51.304498"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.306689"], ["updated_at", "2015-05-27 08:32:51.306689"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.308760"], ["updated_at", "2015-05-27 08:32:51.308760"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.310798"], ["updated_at", "2015-05-27 08:32:51.310798"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.312921"], ["updated_at", "2015-05-27 08:32:51.312921"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.315931"], ["updated_at", "2015-05-27 08:32:51.315931"]]
+  [1m[36m (0.7ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.318618"], ["updated_at", "2015-05-27 08:32:51.318618"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.322945"], ["updated_at", "2015-05-27 08:32:51.322945"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.325134"], ["updated_at", "2015-05-27 08:32:51.325134"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mFactoryLog Load (0.1ms)[0m  [1mSELECT "factory_logs".* FROM "factory_logs"[0m
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.329273"], ["updated_at", "2015-05-27 08:32:51.329273"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.331204"], ["updated_at", "2015-05-27 08:32:51.331204"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.332919"], ["updated_at", "2015-05-27 08:32:51.332919"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.334275"], ["updated_at", "2015-05-27 08:32:51.334275"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.335625"], ["updated_at", "2015-05-27 08:32:51.335625"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.336876"], ["updated_at", "2015-05-27 08:32:51.336876"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.338712"], ["updated_at", "2015-05-27 08:32:51.338712"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.340188"], ["updated_at", "2015-05-27 08:32:51.340188"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.341477"], ["updated_at", "2015-05-27 08:32:51.341477"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.343268"], ["updated_at", "2015-05-27 08:32:51.343268"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.345065"], ["updated_at", "2015-05-27 08:32:51.345065"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:32:51.346871"], ["updated_at", "2015-05-27 08:32:51.346871"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:32:51.348694"], ["updated_at", "2015-05-27 08:32:51.348694"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:32:51.350229"], ["updated_at", "2015-05-27 08:32:51.350229"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mFactoryLog Load (0.1ms)[0m  SELECT "factory_logs".* FROM "factory_logs"
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.361296"], ["updated_at", "2015-05-27 08:32:51.361296"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.363091"], ["updated_at", "2015-05-27 08:32:51.363091"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.365405"], ["updated_at", "2015-05-27 08:32:51.365405"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.366738"], ["updated_at", "2015-05-27 08:32:51.366738"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.367923"], ["updated_at", "2015-05-27 08:32:51.367923"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.369873"], ["updated_at", "2015-05-27 08:32:51.369873"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.372972"], ["updated_at", "2015-05-27 08:32:51.372972"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.375338"], ["updated_at", "2015-05-27 08:32:51.375338"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.377241"], ["updated_at", "2015-05-27 08:32:51.377241"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.379093"], ["updated_at", "2015-05-27 08:32:51.379093"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mFactoryLog Load (0.1ms)[0m  [1mSELECT "factory_logs".* FROM "factory_logs"[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.382841"], ["updated_at", "2015-05-27 08:32:51.382841"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.384939"], ["updated_at", "2015-05-27 08:32:51.384939"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:32:51.386842"], ["updated_at", "2015-05-27 08:32:51.386842"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mFactoryLog Load (0.1ms)[0m  [1mSELECT "factory_logs".* FROM "factory_logs"[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.390993"], ["updated_at", "2015-05-27 08:32:51.390993"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.393240"], ["updated_at", "2015-05-27 08:32:51.393240"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.395006"], ["updated_at", "2015-05-27 08:32:51.395006"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.396343"], ["updated_at", "2015-05-27 08:32:51.396343"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.397577"], ["updated_at", "2015-05-27 08:32:51.397577"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.398790"], ["updated_at", "2015-05-27 08:32:51.398790"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.400067"], ["updated_at", "2015-05-27 08:32:51.400067"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.401258"], ["updated_at", "2015-05-27 08:32:51.401258"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.402358"], ["updated_at", "2015-05-27 08:32:51.402358"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:32:51.403473"], ["updated_at", "2015-05-27 08:32:51.403473"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:32:51.404813"], ["updated_at", "2015-05-27 08:32:51.404813"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:32:51.406494"], ["updated_at", "2015-05-27 08:32:51.406494"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:32:51.407858"], ["updated_at", "2015-05-27 08:32:51.407858"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:32:51.409210"], ["updated_at", "2015-05-27 08:32:51.409210"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:32:51.410480"], ["updated_at", "2015-05-27 08:32:51.410480"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:32:51.411760"], ["updated_at", "2015-05-27 08:32:51.411760"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:32:51.413102"], ["updated_at", "2015-05-27 08:32:51.413102"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:32:51.414443"], ["updated_at", "2015-05-27 08:32:51.414443"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:32:51.415778"], ["updated_at", "2015-05-27 08:32:51.415778"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:32:51.417683"], ["updated_at", "2015-05-27 08:32:51.417683"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mFactoryLog Load (0.1ms)[0m  SELECT "factory_logs".* FROM "factory_logs"
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.657312"], ["updated_at", "2015-05-27 08:33:07.657312"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.664220"], ["updated_at", "2015-05-27 08:33:07.664220"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.666491"], ["updated_at", "2015-05-27 08:33:07.666491"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.668610"], ["updated_at", "2015-05-27 08:33:07.668610"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.671197"], ["updated_at", "2015-05-27 08:33:07.671197"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.673184"], ["updated_at", "2015-05-27 08:33:07.673184"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.676136"], ["updated_at", "2015-05-27 08:33:07.676136"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.678383"], ["updated_at", "2015-05-27 08:33:07.678383"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.680694"], ["updated_at", "2015-05-27 08:33:07.680694"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.682547"], ["updated_at", "2015-05-27 08:33:07.682547"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:33:07.684331"], ["updated_at", "2015-05-27 08:33:07.684331"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:33:07.686292"], ["updated_at", "2015-05-27 08:33:07.686292"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:33:07.688025"], ["updated_at", "2015-05-27 08:33:07.688025"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:33:07.690395"], ["updated_at", "2015-05-27 08:33:07.690395"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:33:07.694853"], ["updated_at", "2015-05-27 08:33:07.694853"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:33:07.697067"], ["updated_at", "2015-05-27 08:33:07.697067"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:33:07.699516"], ["updated_at", "2015-05-27 08:33:07.699516"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:33:07.701732"], ["updated_at", "2015-05-27 08:33:07.701732"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:33:07.704275"], ["updated_at", "2015-05-27 08:33:07.704275"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:33:07.706941"], ["updated_at", "2015-05-27 08:33:07.706941"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mFactoryLog Load (0.2ms)[0m  SELECT "factory_logs".* FROM "factory_logs"
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.715573"], ["updated_at", "2015-05-27 08:33:07.715573"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.718435"], ["updated_at", "2015-05-27 08:33:07.718435"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:33:07.720927"], ["updated_at", "2015-05-27 08:33:07.720927"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mFactoryLog Load (0.1ms)[0m  SELECT "factory_logs".* FROM "factory_logs"
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.725437"], ["updated_at", "2015-05-27 08:33:07.725437"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.727714"], ["updated_at", "2015-05-27 08:33:07.727714"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.729545"], ["updated_at", "2015-05-27 08:33:07.729545"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.731336"], ["updated_at", "2015-05-27 08:33:07.731336"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.733415"], ["updated_at", "2015-05-27 08:33:07.733415"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.735542"], ["updated_at", "2015-05-27 08:33:07.735542"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.737180"], ["updated_at", "2015-05-27 08:33:07.737180"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.739653"], ["updated_at", "2015-05-27 08:33:07.739653"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.742178"], ["updated_at", "2015-05-27 08:33:07.742178"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.744033"], ["updated_at", "2015-05-27 08:33:07.744033"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.746405"], ["updated_at", "2015-05-27 08:33:07.746405"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.748730"], ["updated_at", "2015-05-27 08:33:07.748730"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.752666"], ["updated_at", "2015-05-27 08:33:07.752666"]]
+  [1m[36m (0.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.755374"], ["updated_at", "2015-05-27 08:33:07.755374"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.758322"], ["updated_at", "2015-05-27 08:33:07.758322"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.760849"], ["updated_at", "2015-05-27 08:33:07.760849"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.763110"], ["updated_at", "2015-05-27 08:33:07.763110"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.765424"], ["updated_at", "2015-05-27 08:33:07.765424"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.767101"], ["updated_at", "2015-05-27 08:33:07.767101"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.768618"], ["updated_at", "2015-05-27 08:33:07.768618"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mFactoryLog Load (0.1ms)[0m  [1mSELECT "factory_logs".* FROM "factory_logs"[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.772440"], ["updated_at", "2015-05-27 08:33:07.772440"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.774102"], ["updated_at", "2015-05-27 08:33:07.774102"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.775921"], ["updated_at", "2015-05-27 08:33:07.775921"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.777335"], ["updated_at", "2015-05-27 08:33:07.777335"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.778507"], ["updated_at", "2015-05-27 08:33:07.778507"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.779775"], ["updated_at", "2015-05-27 08:33:07.779775"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.781126"], ["updated_at", "2015-05-27 08:33:07.781126"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.783121"], ["updated_at", "2015-05-27 08:33:07.783121"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.792955"], ["updated_at", "2015-05-27 08:33:07.792955"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.794568"], ["updated_at", "2015-05-27 08:33:07.794568"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.796313"], ["updated_at", "2015-05-27 08:33:07.796313"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:33:07.797869"], ["updated_at", "2015-05-27 08:33:07.797869"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:33:07.799336"], ["updated_at", "2015-05-27 08:33:07.799336"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:33:07.800678"], ["updated_at", "2015-05-27 08:33:07.800678"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mFactoryLog Load (0.1ms)[0m  SELECT "factory_logs".* FROM "factory_logs"
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.803781"], ["updated_at", "2015-05-27 08:33:07.803781"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.805183"], ["updated_at", "2015-05-27 08:33:07.805183"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.806939"], ["updated_at", "2015-05-27 08:33:07.806939"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.808502"], ["updated_at", "2015-05-27 08:33:07.808502"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.809888"], ["updated_at", "2015-05-27 08:33:07.809888"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.813092"], ["updated_at", "2015-05-27 08:33:07.813092"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.814965"], ["updated_at", "2015-05-27 08:33:07.814965"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.816422"], ["updated_at", "2015-05-27 08:33:07.816422"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.817624"], ["updated_at", "2015-05-27 08:33:07.817624"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.818934"], ["updated_at", "2015-05-27 08:33:07.818934"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 0.5], ["created_at", "2015-05-27 08:33:07.820664"], ["updated_at", "2015-05-27 08:33:07.820664"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 0.5], ["created_at", "2015-05-27 08:33:07.822709"], ["updated_at", "2015-05-27 08:33:07.822709"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 0.5], ["created_at", "2015-05-27 08:33:07.824310"], ["updated_at", "2015-05-27 08:33:07.824310"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 0.5], ["created_at", "2015-05-27 08:33:07.825763"], ["updated_at", "2015-05-27 08:33:07.825763"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 0.5], ["created_at", "2015-05-27 08:33:07.827241"], ["updated_at", "2015-05-27 08:33:07.827241"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 0.5], ["created_at", "2015-05-27 08:33:07.828754"], ["updated_at", "2015-05-27 08:33:07.828754"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 0.5], ["created_at", "2015-05-27 08:33:07.830581"], ["updated_at", "2015-05-27 08:33:07.830581"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 5.0], ["created_at", "2015-05-27 08:33:07.832477"], ["updated_at", "2015-05-27 08:33:07.832477"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 5.0], ["created_at", "2015-05-27 08:33:07.834548"], ["updated_at", "2015-05-27 08:33:07.834548"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 5.0], ["created_at", "2015-05-27 08:33:07.836153"], ["updated_at", "2015-05-27 08:33:07.836153"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mFactoryLog Load (0.1ms)[0m  [1mSELECT "factory_logs".* FROM "factory_logs"[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.839928"], ["updated_at", "2015-05-27 08:33:07.839928"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.841825"], ["updated_at", "2015-05-27 08:33:07.841825"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.843381"], ["updated_at", "2015-05-27 08:33:07.843381"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.844590"], ["updated_at", "2015-05-27 08:33:07.844590"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.845780"], ["updated_at", "2015-05-27 08:33:07.845780"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.846944"], ["updated_at", "2015-05-27 08:33:07.846944"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.848096"], ["updated_at", "2015-05-27 08:33:07.848096"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.849502"], ["updated_at", "2015-05-27 08:33:07.849502"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.850664"], ["updated_at", "2015-05-27 08:33:07.850664"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:07.851705"], ["updated_at", "2015-05-27 08:33:07.851705"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mFactoryLog Load (0.1ms)[0m  SELECT "factory_logs".* FROM "factory_logs"
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.556882"], ["updated_at", "2015-05-27 08:33:32.556882"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.561958"], ["updated_at", "2015-05-27 08:33:32.561958"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.564972"], ["updated_at", "2015-05-27 08:33:32.564972"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.567054"], ["updated_at", "2015-05-27 08:33:32.567054"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.569383"], ["updated_at", "2015-05-27 08:33:32.569383"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.571557"], ["updated_at", "2015-05-27 08:33:32.571557"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.573944"], ["updated_at", "2015-05-27 08:33:32.573944"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.575987"], ["updated_at", "2015-05-27 08:33:32.575987"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.578028"], ["updated_at", "2015-05-27 08:33:32.578028"]]
+  [1m[35m (0.6ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.581041"], ["updated_at", "2015-05-27 08:33:32.581041"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mFactoryLog Load (0.3ms)[0m  SELECT "factory_logs".* FROM "factory_logs"
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.588651"], ["updated_at", "2015-05-27 08:33:32.588651"]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.593017"], ["updated_at", "2015-05-27 08:33:32.593017"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.595820"], ["updated_at", "2015-05-27 08:33:32.595820"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.598093"], ["updated_at", "2015-05-27 08:33:32.598093"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.599963"], ["updated_at", "2015-05-27 08:33:32.599963"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.601647"], ["updated_at", "2015-05-27 08:33:32.601647"]]
+  [1m[35m (0.4ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.603651"], ["updated_at", "2015-05-27 08:33:32.603651"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.606105"], ["updated_at", "2015-05-27 08:33:32.606105"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.607827"], ["updated_at", "2015-05-27 08:33:32.607827"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.609851"], ["updated_at", "2015-05-27 08:33:32.609851"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.612261"], ["updated_at", "2015-05-27 08:33:32.612261"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.614035"], ["updated_at", "2015-05-27 08:33:32.614035"]]
+  [1m[35m (0.4ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.616369"], ["updated_at", "2015-05-27 08:33:32.616369"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.618528"], ["updated_at", "2015-05-27 08:33:32.618528"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.620747"], ["updated_at", "2015-05-27 08:33:32.620747"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.622794"], ["updated_at", "2015-05-27 08:33:32.622794"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.625196"], ["updated_at", "2015-05-27 08:33:32.625196"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.627343"], ["updated_at", "2015-05-27 08:33:32.627343"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.629380"], ["updated_at", "2015-05-27 08:33:32.629380"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.631478"], ["updated_at", "2015-05-27 08:33:32.631478"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mFactoryLog Load (0.1ms)[0m  [1mSELECT "factory_logs".* FROM "factory_logs"[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.635961"], ["updated_at", "2015-05-27 08:33:32.635961"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.638189"], ["updated_at", "2015-05-27 08:33:32.638189"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.642275"], ["updated_at", "2015-05-27 08:33:32.642275"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.644154"], ["updated_at", "2015-05-27 08:33:32.644154"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.646618"], ["updated_at", "2015-05-27 08:33:32.646618"]]
+  [1m[35m (0.5ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.648332"], ["updated_at", "2015-05-27 08:33:32.648332"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.650047"], ["updated_at", "2015-05-27 08:33:32.650047"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.652041"], ["updated_at", "2015-05-27 08:33:32.652041"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.653777"], ["updated_at", "2015-05-27 08:33:32.653777"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.655760"], ["updated_at", "2015-05-27 08:33:32.655760"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.657999"], ["updated_at", "2015-05-27 08:33:32.657999"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:33:32.659854"], ["updated_at", "2015-05-27 08:33:32.659854"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:33:32.661592"], ["updated_at", "2015-05-27 08:33:32.661592"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:33:32.663222"], ["updated_at", "2015-05-27 08:33:32.663222"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mFactoryLog Load (0.1ms)[0m  SELECT "factory_logs".* FROM "factory_logs"
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.667182"], ["updated_at", "2015-05-27 08:33:32.667182"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.668875"], ["updated_at", "2015-05-27 08:33:32.668875"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.670530"], ["updated_at", "2015-05-27 08:33:32.670530"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.671967"], ["updated_at", "2015-05-27 08:33:32.671967"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.673609"], ["updated_at", "2015-05-27 08:33:32.673609"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.675449"], ["updated_at", "2015-05-27 08:33:32.675449"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.677789"], ["updated_at", "2015-05-27 08:33:32.677789"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.679480"], ["updated_at", "2015-05-27 08:33:32.679480"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.681121"], ["updated_at", "2015-05-27 08:33:32.681121"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.682624"], ["updated_at", "2015-05-27 08:33:32.682624"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:33:32.693416"], ["updated_at", "2015-05-27 08:33:32.693416"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:33:32.695000"], ["updated_at", "2015-05-27 08:33:32.695000"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:33:32.696256"], ["updated_at", "2015-05-27 08:33:32.696256"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:33:32.697437"], ["updated_at", "2015-05-27 08:33:32.697437"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:33:32.698610"], ["updated_at", "2015-05-27 08:33:32.698610"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:33:32.699884"], ["updated_at", "2015-05-27 08:33:32.699884"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:33:32.701684"], ["updated_at", "2015-05-27 08:33:32.701684"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:33:32.703759"], ["updated_at", "2015-05-27 08:33:32.703759"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:33:32.705340"], ["updated_at", "2015-05-27 08:33:32.705340"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:33:32.706865"], ["updated_at", "2015-05-27 08:33:32.706865"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mFactoryLog Load (0.1ms)[0m  [1mSELECT "factory_logs".* FROM "factory_logs"[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.710449"], ["updated_at", "2015-05-27 08:33:32.710449"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.711932"], ["updated_at", "2015-05-27 08:33:32.711932"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.713288"], ["updated_at", "2015-05-27 08:33:32.713288"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.714406"], ["updated_at", "2015-05-27 08:33:32.714406"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.715577"], ["updated_at", "2015-05-27 08:33:32.715577"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.716613"], ["updated_at", "2015-05-27 08:33:32.716613"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.717649"], ["updated_at", "2015-05-27 08:33:32.717649"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.718824"], ["updated_at", "2015-05-27 08:33:32.718824"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.720325"], ["updated_at", "2015-05-27 08:33:32.720325"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.721801"], ["updated_at", "2015-05-27 08:33:32.721801"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 0.5], ["created_at", "2015-05-27 08:33:32.723156"], ["updated_at", "2015-05-27 08:33:32.723156"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 0.5], ["created_at", "2015-05-27 08:33:32.724416"], ["updated_at", "2015-05-27 08:33:32.724416"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 0.5], ["created_at", "2015-05-27 08:33:32.726003"], ["updated_at", "2015-05-27 08:33:32.726003"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 0.5], ["created_at", "2015-05-27 08:33:32.727375"], ["updated_at", "2015-05-27 08:33:32.727375"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 0.5], ["created_at", "2015-05-27 08:33:32.728642"], ["updated_at", "2015-05-27 08:33:32.728642"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 0.5], ["created_at", "2015-05-27 08:33:32.729836"], ["updated_at", "2015-05-27 08:33:32.729836"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 0.5], ["created_at", "2015-05-27 08:33:32.731061"], ["updated_at", "2015-05-27 08:33:32.731061"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 5.0], ["created_at", "2015-05-27 08:33:32.732249"], ["updated_at", "2015-05-27 08:33:32.732249"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 5.0], ["created_at", "2015-05-27 08:33:32.733540"], ["updated_at", "2015-05-27 08:33:32.733540"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 5.0], ["created_at", "2015-05-27 08:33:32.734736"], ["updated_at", "2015-05-27 08:33:32.734736"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mFactoryLog Load (0.1ms)[0m  SELECT "factory_logs".* FROM "factory_logs"
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.738142"], ["updated_at", "2015-05-27 08:33:32.738142"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:33:32.740486"], ["updated_at", "2015-05-27 08:33:32.740486"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:33:32.742626"], ["updated_at", "2015-05-27 08:33:32.742626"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mFactoryLog Load (0.1ms)[0m  SELECT "factory_logs".* FROM "factory_logs"
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.391224"], ["updated_at", "2015-05-27 08:36:04.391224"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.403022"], ["updated_at", "2015-05-27 08:36:04.403022"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.409966"], ["updated_at", "2015-05-27 08:36:04.409966"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.412380"], ["updated_at", "2015-05-27 08:36:04.412380"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.414517"], ["updated_at", "2015-05-27 08:36:04.414517"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.422614"], ["updated_at", "2015-05-27 08:36:04.422614"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.427597"], ["updated_at", "2015-05-27 08:36:04.427597"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.429941"], ["updated_at", "2015-05-27 08:36:04.429941"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.434010"], ["updated_at", "2015-05-27 08:36:04.434010"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.436150"], ["updated_at", "2015-05-27 08:36:04.436150"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.440029"], ["updated_at", "2015-05-27 08:36:04.440029"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.443448"], ["updated_at", "2015-05-27 08:36:04.443448"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.445237"], ["updated_at", "2015-05-27 08:36:04.445237"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.447096"], ["updated_at", "2015-05-27 08:36:04.447096"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.453297"], ["updated_at", "2015-05-27 08:36:04.453297"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.456965"], ["updated_at", "2015-05-27 08:36:04.456965"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.459190"], ["updated_at", "2015-05-27 08:36:04.459190"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.461314"], ["updated_at", "2015-05-27 08:36:04.461314"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.463404"], ["updated_at", "2015-05-27 08:36:04.463404"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.468050"], ["updated_at", "2015-05-27 08:36:04.468050"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mFactoryLog Load (0.1ms)[0m  SELECT "factory_logs".* FROM "factory_logs"
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.480443"], ["updated_at", "2015-05-27 08:36:04.480443"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.485175"], ["updated_at", "2015-05-27 08:36:04.485175"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.487648"], ["updated_at", "2015-05-27 08:36:04.487648"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.492841"], ["updated_at", "2015-05-27 08:36:04.492841"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.495197"], ["updated_at", "2015-05-27 08:36:04.495197"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.496935"], ["updated_at", "2015-05-27 08:36:04.496935"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.502411"], ["updated_at", "2015-05-27 08:36:04.502411"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.506468"], ["updated_at", "2015-05-27 08:36:04.506468"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.508551"], ["updated_at", "2015-05-27 08:36:04.508551"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.510414"], ["updated_at", "2015-05-27 08:36:04.510414"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:36:04.512366"], ["updated_at", "2015-05-27 08:36:04.512366"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:36:04.514700"], ["updated_at", "2015-05-27 08:36:04.514700"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:36:04.522897"], ["updated_at", "2015-05-27 08:36:04.522897"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:36:04.524855"], ["updated_at", "2015-05-27 08:36:04.524855"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:36:04.526754"], ["updated_at", "2015-05-27 08:36:04.526754"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:36:04.529457"], ["updated_at", "2015-05-27 08:36:04.529457"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:36:04.534871"], ["updated_at", "2015-05-27 08:36:04.534871"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:36:04.537510"], ["updated_at", "2015-05-27 08:36:04.537510"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:36:04.543049"], ["updated_at", "2015-05-27 08:36:04.543049"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:36:04.544606"], ["updated_at", "2015-05-27 08:36:04.544606"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mFactoryLog Load (0.2ms)[0m  [1mSELECT "factory_logs".* FROM "factory_logs"[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.548336"], ["updated_at", "2015-05-27 08:36:04.548336"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.552522"], ["updated_at", "2015-05-27 08:36:04.552522"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:36:04.554644"], ["updated_at", "2015-05-27 08:36:04.554644"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mFactoryLog Load (0.1ms)[0m  [1mSELECT "factory_logs".* FROM "factory_logs"[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.561434"], ["updated_at", "2015-05-27 08:36:04.561434"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.563610"], ["updated_at", "2015-05-27 08:36:04.563610"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.568352"], ["updated_at", "2015-05-27 08:36:04.568352"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.573513"], ["updated_at", "2015-05-27 08:36:04.573513"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.575084"], ["updated_at", "2015-05-27 08:36:04.575084"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.576403"], ["updated_at", "2015-05-27 08:36:04.576403"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.577587"], ["updated_at", "2015-05-27 08:36:04.577587"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.579093"], ["updated_at", "2015-05-27 08:36:04.579093"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.594668"], ["updated_at", "2015-05-27 08:36:04.594668"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.596046"], ["updated_at", "2015-05-27 08:36:04.596046"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mFactoryLog Load (0.1ms)[0m  SELECT "factory_logs".* FROM "factory_logs"
+  [1m[36m (1.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.605229"], ["updated_at", "2015-05-27 08:36:04.605229"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.608281"], ["updated_at", "2015-05-27 08:36:04.608281"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.609731"], ["updated_at", "2015-05-27 08:36:04.609731"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.611409"], ["updated_at", "2015-05-27 08:36:04.611409"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.612662"], ["updated_at", "2015-05-27 08:36:04.612662"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.614067"], ["updated_at", "2015-05-27 08:36:04.614067"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.616894"], ["updated_at", "2015-05-27 08:36:04.616894"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.622124"], ["updated_at", "2015-05-27 08:36:04.622124"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.623630"], ["updated_at", "2015-05-27 08:36:04.623630"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.624882"], ["updated_at", "2015-05-27 08:36:04.624882"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 0.5], ["created_at", "2015-05-27 08:36:04.626228"], ["updated_at", "2015-05-27 08:36:04.626228"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 0.5], ["created_at", "2015-05-27 08:36:04.627488"], ["updated_at", "2015-05-27 08:36:04.627488"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 0.5], ["created_at", "2015-05-27 08:36:04.628792"], ["updated_at", "2015-05-27 08:36:04.628792"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 0.5], ["created_at", "2015-05-27 08:36:04.630002"], ["updated_at", "2015-05-27 08:36:04.630002"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 0.5], ["created_at", "2015-05-27 08:36:04.632405"], ["updated_at", "2015-05-27 08:36:04.632405"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 0.5], ["created_at", "2015-05-27 08:36:04.635052"], ["updated_at", "2015-05-27 08:36:04.635052"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 0.5], ["created_at", "2015-05-27 08:36:04.636538"], ["updated_at", "2015-05-27 08:36:04.636538"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 5.0], ["created_at", "2015-05-27 08:36:04.639347"], ["updated_at", "2015-05-27 08:36:04.639347"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 5.0], ["created_at", "2015-05-27 08:36:04.642852"], ["updated_at", "2015-05-27 08:36:04.642852"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 5.0], ["created_at", "2015-05-27 08:36:04.644099"], ["updated_at", "2015-05-27 08:36:04.644099"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mFactoryLog Load (0.1ms)[0m  [1mSELECT "factory_logs".* FROM "factory_logs"[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.647652"], ["updated_at", "2015-05-27 08:36:04.647652"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.651557"], ["updated_at", "2015-05-27 08:36:04.651557"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.654321"], ["updated_at", "2015-05-27 08:36:04.654321"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.655787"], ["updated_at", "2015-05-27 08:36:04.655787"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.657382"], ["updated_at", "2015-05-27 08:36:04.657382"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.660811"], ["updated_at", "2015-05-27 08:36:04.660811"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.663511"], ["updated_at", "2015-05-27 08:36:04.663511"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.665963"], ["updated_at", "2015-05-27 08:36:04.665963"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.669698"], ["updated_at", "2015-05-27 08:36:04.669698"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryA"], ["traits", "[]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.672846"], ["updated_at", "2015-05-27 08:36:04.672846"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryA"], ["traits", "[:trait]"], ["assos", "[]"], ["time", 2.0], ["created_at", "2015-05-27 08:36:04.674395"], ["updated_at", "2015-05-27 08:36:04.674395"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:36:04.675659"], ["updated_at", "2015-05-27 08:36:04.675659"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:36:04.676891"], ["updated_at", "2015-05-27 08:36:04.676891"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "factory_logs" ("name", "traits", "assos", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "factoryB"], ["traits", "[]"], ["assos", "[]"], ["time", 10.0], ["created_at", "2015-05-27 08:36:04.678192"], ["updated_at", "2015-05-27 08:36:04.678192"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mFactoryLog Load (0.1ms)[0m  SELECT "factory_logs".* FROM "factory_logs"
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
