@@ -93,7 +93,7 @@ class FactoryLog < ActiveRecord::Base
     result = []
     p = parent
     result.push(p)
-    while(p = p.parent) do
+    while (p = p.parent)
       result.push(p)
     end
     result
