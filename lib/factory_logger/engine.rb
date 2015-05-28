@@ -1,3 +1,5 @@
+require_relative "./config.rb"
+
 module FactoryLogger
   class Engine < ::Rails::Engine
     config.generators do |g|
