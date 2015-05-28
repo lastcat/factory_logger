@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20150525010308) do
     t.text     "traits"
     t.text     "assos"
     t.float    "time"
+    t.integer  "parent_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
