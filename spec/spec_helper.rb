@@ -1,14 +1,13 @@
-ENV['RAILS_ENV'] ||= 'test'
+ENV["RAILS_ENV"] ||= "test"
 
 require "coveralls"
 Coveralls.wear!
 
 require File.expand_path("../dummy/config/environment.rb",  __FILE__)
-require 'rspec/rails'
-require 'rspec/autorun'
-require 'factory_girl_rails'
-require 'database_rewinder'
-require 'database_cleaner'
+require "rspec/rails"
+require "rspec/autorun"
+require "factory_girl_rails"
+require "database_cleaner"
 
 Rails.backtrace_cleaner.remove_silencers!
 # Load support files
@@ -20,7 +19,7 @@ RSpec.configure do |config|
   config.order = "random"
   config.include FactoryGirl::Syntax::Methods
 
-###################### DatabaseCleaner Setting ######################
+  ###################### DatabaseCleaner Setting ######################
   config.before(:suite) do
     DatabaseCleaner.strategy = :transaction
     DatabaseCleaner.clean_with(:truncation)
