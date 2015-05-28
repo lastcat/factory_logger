@@ -1,10 +1,15 @@
 class FactoryLog < ActiveRecord::Base
-  #TODO: fix algorithm
-  #TODO: fix name devide to name and traits
-  #TODO: fix visualize association relation and selectable counting or not.
+  # TODO: fix algorithm
+  # TODO: fix name devide to name and traits
+  # TODO: fix visualize association relation and selectable counting or not.
+  # TODO: initializer setting parent_id.
 
   # Return Factory's log ranking about total time it took.
   # They are identified factory_name + trait_name.
+
+  belongs_to :parent, foreign_key: "parent_id", class_name: "FactoryLog"
+  has_many :children, foreign_key: "parent_id", class_name: "FactoryLog"
+
   def self.time_ranking
     ranking = []
     FactoryLog.all.each do |log|
@@ -65,5 +70,32 @@ class FactoryLog < ActiveRecord::Base
   # Return all specified factory object(identified factory_name only)
   def self.log_set(factory)
     FactoryLog.all.select { |log| log.name == factory }
+  end
+
+  # Return all descendants fatcory_log array.
+  # ex:
+  #     [
+  #       [child1, [[grand_son1_1], [grand_son1_2]]],
+  #       [child2, [[grand_son2_1]]],
+  #       [child3]
+  #     ]
+  # TODO: designatable depth
+  def descendants
+    unless children.empty?
+      children.map do |child|
+        [child, child.descendants].compact
+      end
+    end
+  end
+
+  # Retuen all ancestors factory_log array. Index equal depth (from self).
+  def ancestors
+    result = []
+    p = parent
+    result.push(p)
+    while (p = p.parent)
+      result.push(p)
+    end
+    result
   end
 end

@@ -5,6 +5,7 @@ class CreateFactoryLogs < ActiveRecord::Migration
       t.text :traits
       t.text :assos
       t.float :time
+      t.integer :parent_id
 
       t.timestamps null: false
     end
