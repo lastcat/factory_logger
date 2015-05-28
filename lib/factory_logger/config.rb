@@ -4,7 +4,7 @@ module FactoryLogger
     include ActiveSupport::Configurable
     config_accessor :something
   end
-  
+
   def self.configure(&block)
     yield config
   end
