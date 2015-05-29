@@ -1,7 +1,6 @@
 FactoryGirl.define do
   factory :trait do
-    name "MyString"
-factory_id 1
+    sequence(:name) { |n| "Trait_#{n}" }
   end
 
 end
