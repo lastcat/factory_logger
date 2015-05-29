@@ -21,7 +21,7 @@ class Factory < ActiveRecord::Base
       traits.each do |trait|
         Trait.create_new_trait_and_relation(new_factory, trait)
       end
-      AssoRelationcreate_asso_relations(new_factory, assos)
+      AssoRelation.create_asso_relations(new_factory, assos)
     else
       return if same_factory(name, traits)
       new_factory = Factory.create(name: name)
