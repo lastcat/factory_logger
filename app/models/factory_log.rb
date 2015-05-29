@@ -10,6 +10,9 @@ class FactoryLog < ActiveRecord::Base
   belongs_to :parent, foreign_key: "parent_id", class_name: "FactoryLog"
   has_many :children, foreign_key: "parent_id", class_name: "FactoryLog"
 
+  belongs_to :factory
+
+
   def self.time_ranking
     ranking = []
     FactoryLog.all.each do |log|

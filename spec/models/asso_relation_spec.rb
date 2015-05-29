@@ -1,5 +1,5 @@
 require "spec_helper"
 
-RSpec.describe Asso, type: :model do
+RSpec.describe AssoRelation, type: :model do
   pending "add some examples to (or delete) #{__FILE__}"
 end
