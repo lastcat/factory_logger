@@ -7,6 +7,9 @@ class CreateFactoryLogs < ActiveRecord::Migration
       t.float :time
       t.integer :parent_id
 
+      t.integer :factory_id
+      t.float :exectuaion_time
+
       t.timestamps null: false
     end
   end
