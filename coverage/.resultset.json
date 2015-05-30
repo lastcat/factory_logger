@@ -258,15 +258,6 @@
         null,
         null
       ],
-      "/Users/yoshitake.nakaji/works/sandbox/myproj/factory_logger/spec/factories/assos.rb": [
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
       "/Users/yoshitake.nakaji/works/sandbox/myproj/factory_logger/spec/factories/factories.rb": [
         1,
         1,
@@ -318,20 +309,19 @@
         null
       ],
       "/Users/yoshitake.nakaji/works/sandbox/myproj/factory_logger/app/models/factory_log.rb": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
         null,
         1,
         null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
         null,
         1,
         1,
@@ -441,6 +431,7 @@
         null
       ],
       "/Users/yoshitake.nakaji/works/sandbox/myproj/factory_logger/app/models/asso_relation.rb": [
+        null,
         1,
         1,
         1,
@@ -455,17 +446,6 @@
         null,
         null,
         null,
-        null
-      ],
-      "/Users/yoshitake.nakaji/works/sandbox/myproj/factory_logger/spec/models/asso_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        null
-      ],
-      "/Users/yoshitake.nakaji/works/sandbox/myproj/factory_logger/app/models/asso.rb": [
-        1,
         null
       ],
       "/Users/yoshitake.nakaji/works/sandbox/myproj/factory_logger/spec/models/factory_log_spec.rb": [
@@ -526,6 +506,7 @@
         null
       ],
       "/Users/yoshitake.nakaji/works/sandbox/myproj/factory_logger/app/models/factory.rb": [
+        null,
         1,
         1,
         1,
@@ -555,16 +536,14 @@
         2,
         2,
         2,
-        2,
-        null,
         0,
         null,
         2,
         null,
+        2,
         null,
         null,
         null,
-        1,
         null,
         null,
         1,
@@ -575,7 +554,6 @@
         13,
         null,
         13,
-        null,
         null,
         null,
         null
@@ -605,6 +583,7 @@
         null
       ],
       "/Users/yoshitake.nakaji/works/sandbox/myproj/factory_logger/app/models/trait_relation.rb": [
+        null,
         1,
         1,
         1,
@@ -615,7 +594,6 @@
         1,
         null,
         2,
-        null,
         null,
         null
       ],
@@ -636,6 +614,7 @@
         null
       ],
       "/Users/yoshitake.nakaji/works/sandbox/myproj/factory_logger/app/models/trait.rb": [
+        null,
         1,
         1,
         null,
@@ -649,6 +628,6 @@
         null
       ]
     },
-    "timestamp": 1432908491
+    "timestamp": 1432953655
   }
 }
