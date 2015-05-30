@@ -1,3 +1,4 @@
+# This is log model executed factory.
 class FactoryLog < ActiveRecord::Base
   # TODO: fix algorithm
   # TODO: fix name devide to name and traits
@@ -9,9 +10,7 @@ class FactoryLog < ActiveRecord::Base
 
   belongs_to :parent, foreign_key: "parent_id", class_name: "FactoryLog"
   has_many :children, foreign_key: "parent_id", class_name: "FactoryLog"
-
   belongs_to :factory
-
 
   def self.time_ranking
     ranking = []

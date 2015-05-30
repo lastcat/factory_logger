@@ -1,3 +1,4 @@
+# This is Trait model identified by namae and related factory.
 class Trait < ActiveRecord::Base
   has_many :trait_relations
 

@@ -1,7 +1,7 @@
 AllCops:
   Exclude:
     - "vendor/**/*" # rubocop config/default.yml
-    - "db/schema.rb"
+    - "*/schema.rb"
   DisplayCopNames: true
 
 ##################### Style ##################################

@@ -1,3 +1,4 @@
+# This is Factroy pattern(indentified factory_name and having traits) class.
 class Factory < ActiveRecord::Base
   has_many :trait_relations
   has_many :traits, through: :trait_relations
@@ -26,17 +27,15 @@ class Factory < ActiveRecord::Base
       return if same_factory(name, traits)
       new_factory = Factory.create(name: name)
       traits.each do |trait|
-        unless Trait.any? { |tr| tr.name == trait && tr.trait_relations.first.factory.name == name }
-          Trait.create_new_trait_and_relation(new_factory, trait)
-        else
+        if Trait.any? { |tr| tr.name == trait && tr.trait_relations.first.factory.name == name }
           TraitRelation.create_new_trait_relation(new_factory, trait)
+        else
+          Trait.create_new_trait_and_relation(new_factory, trait)
         end
         AssoRelation.create_asso_relations(new_factory, assos)
       end
     end
   end
-
-  private
 
   # Return same name and same traits having factory.
   def self.same_factory(name, trait_names)
@@ -49,5 +48,4 @@ class Factory < ActiveRecord::Base
       factory.name == name && factory_traits == trait_names
     end
   end
-
 end
