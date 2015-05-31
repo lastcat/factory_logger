@@ -17,7 +17,7 @@ class Asso < ActiveRecord::Base
   end
 
   # Judging whether same asso exist.
-  def self.same_asso_exist?(asso_name, factory , parent_factory)
+  def self.same_asso_exist?(asso_name, factory, parent_factory)
     Asso.all.any? do |as|
       as.factory == factory && as.name == asso_name && as.parent_factories.include?(parent_factory)
     end
