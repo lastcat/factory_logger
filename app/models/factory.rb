@@ -9,7 +9,7 @@ class Factory < ActiveRecord::Base
   # Arguments is expected, hash like this,
   # name: factory_name
   # traits: trait_name(String) array
-  # assos: assoiacion_name(Strings) arary
+  # assos: array of hash { name:association_name, traits: trait(string) array, factory_name: factory_name }
   # I wrote factroy_inspector gem (https://github.com/lastcat/factory_inspector). Please use it.
   def self.create_unique_factory(inspected_factory)
     # TODO: パラメータのnilカバー
@@ -22,7 +22,9 @@ class Factory < ActiveRecord::Base
       traits.each do |trait|
         Trait.create_new_trait_and_relation(new_factory, trait)
       end
-      AssoRelation.create_asso_relations(new_factory, assos)
+      assos.each do |asso|
+        Asso.create_new_asso_and_relation(asso, new_factory)
+      end
     else
       return if same_factory(name, traits)
       new_factory = Factory.create(name: name)
@@ -32,7 +34,9 @@ class Factory < ActiveRecord::Base
         else
           Trait.create_new_trait_and_relation(new_factory, trait)
         end
-        AssoRelation.create_asso_relations(new_factory, assos)
+        assos.each do |asso|
+          Asso.create_new_asso_and_relation(asso, new_factory)
+        end
       end
     end
   end
