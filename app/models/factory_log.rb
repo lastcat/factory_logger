@@ -10,7 +10,6 @@ class FactoryLog < ActiveRecord::Base
   # assos: array of hash { name:association_name, traits: trait(string) array, factory_name: factory_name }
   # I wrote factroy_inspector gem (https://github.com/lastcat/factory_inspector). Please use it.
   def self.logging(inspected_factory, execution_time)
-    #puts Factory.create_unique_factory(inspected_factory)
     FactoryLog.create(factory_id: Factory.create_unique_factory(inspected_factory).id, execution_time: execution_time)
   end
 

@@ -39,7 +39,7 @@ class Factory < ActiveRecord::Base
         end
       end
     end
-    return new_factory
+    new_factory
   end
 
   # Return same name and same traits having factory.
