@@ -26,7 +26,7 @@ class Factory < ActiveRecord::Base
         Asso.create_new_asso_and_relation(asso, new_factory)
       end
     else
-      return if same_factory(name, traits)
+      return same_factory(name, traits) if same_factory(name, traits)
       new_factory = Factory.create(name: name)
       traits.each do |trait|
         if Trait.any? { |tr| tr.name == trait && tr.trait_relations.first.factory.name == name }
@@ -39,6 +39,7 @@ class Factory < ActiveRecord::Base
         end
       end
     end
+    return new_factory
   end
 
   # Return same name and same traits having factory.

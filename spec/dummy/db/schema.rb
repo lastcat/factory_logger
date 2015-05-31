@@ -34,15 +34,10 @@ ActiveRecord::Schema.define(version: 20150530075825) do
   end
 
   create_table "factory_logs", force: :cascade do |t|
-    t.string   "name"
-    t.text     "traits"
-    t.text     "assos"
-    t.float    "time"
-    t.integer  "parent_id"
     t.integer  "factory_id"
-    t.float    "exectuaion_time"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.float    "execution_time"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
   create_table "trait_relations", force: :cascade do |t|
