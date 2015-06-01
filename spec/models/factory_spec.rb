@@ -27,8 +27,43 @@ RSpec.describe Factory, type: :model do
     end
   end
 
-  describe "#create_unique_factory" do
+  describe "#same_factory_overwrite" do
+    let!(:same_factory) { create :factory, name: "same_factory" }
+    let!(:trait1) { create :trait, name: "trait1" }
+    let!(:trait_relation1) { TraitRelation.create(factory_id: same_factory.id, trait_id: trait1.id) }
 
+    context "have asso case" do
+      let!(:assos) { [{ name: "asso1", traits: ["trait2"], factory_name: "same_factory" }] }
+      it "same factory have no asso" do
+        expect { Factory.same_factory_overwrite(assos, same_factory) }.to change{ same_factory.assos.size }.from(0).to(1)
+      end
+      context "same factory have assos" do
+        let!(:factory_of_asso) { create :factory, name: "factory_of_asso1" }
+        let!(:asso1) { create :asso, name: "asso1", factory_id: factory_of_asso.id }
+        let!(:asso_relation1) { create :asso_relation, factory_id: same_factory.id, asso_id: asso1.id }
+        it do
+          expect { Factory.same_factory_overwrite(assos, same_factory) }.not_to change{ same_factory.assos.size }
+        end
+      end
+    end
+
+    context "have no asso case" do
+      let!(:assos) { [] }
+      it "same factory have no asso" do
+        expect { Factory.same_factory_overwrite(assos, same_factory) }.not_to change{ same_factory.assos.size }
+      end
+      context "same factory have assos" do
+        let!(:factory_of_asso) { create :factory, name: "factory_of_asso1" }
+        let!(:asso1) { create :asso, name: "asso1", factory_id: factory_of_asso.id }
+        let!(:asso_relation1) { create :asso_relation, factory_id: same_factory.id, asso_id: asso1.id }
+        it do
+          expect { Factory.same_factory_overwrite(assos, same_factory) }.not_to change{ same_factory.assos.size }
+        end
+      end
+    end
+  end
+
+  describe "#create_unique_factory" do
     context "already same factory exist case" do
       let!(:factory1) { create :factory, name: "factory1" }
       it "don't create new factory" do
