@@ -33,6 +33,6 @@ class FactoryLog < ActiveRecord::Base
                     )
       end
     end
-    results
+    results.sort_by! { |l| l[:total_time] }.reverse
   end
 end
