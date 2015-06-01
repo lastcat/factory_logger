@@ -83,4 +83,20 @@ RSpec.describe Factory, type: :model do
       end
     end
   end
+
+  describe ".depth" do
+    let!(:factory1) { create :factory }
+    let!(:factory2) { create :factory }
+    let!(:factory3) { create :factory }
+    let!(:asso1) { create :asso, name: "asso1", factory: factory2 }
+    let!(:asso_relation1) { AssoRelation.create(factory_id: factory1.id, asso_id: asso1.id) }
+    let!(:asso2) { create :asso, name: "asso2", factory: factory2 }
+    let!(:asso_relation2) { AssoRelation.create(factory_id: factory1.id, asso_id: asso2.id) }
+    let!(:asso3) { create :asso, name: "asso3", factory: factory3 }
+    let!(:asso_relation3) { AssoRelation.create(factory_id: factory2.id, asso_id: asso3.id) }
+
+    it do
+      expect(factory1.depth).to eq 3
+    end
+  end
 end
