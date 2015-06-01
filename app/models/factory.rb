@@ -67,4 +67,12 @@ class Factory < ActiveRecord::Base
     end
     same_factory.reload
   end
+
+  # Return max depth of association
+  def depth
+    return 1 if assos.empty?
+    assos.map do |asso|
+      asso.factory.depth
+    end.max + 1
+  end
 end
