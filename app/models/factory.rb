@@ -26,7 +26,8 @@ class Factory < ActiveRecord::Base
         Asso.create_new_asso_and_relation(asso, new_factory)
       end
     else
-      return same_factory(name, traits) if same_factory(name, traits)
+      same_factory = same_factory(name, traits)
+      return same_factory_overwrite(assos, same_factory) if same_factory
       new_factory = Factory.create(name: name)
       traits.each do |trait|
         if Trait.any? { |tr| tr.name == trait && tr.trait_relations.first.factory.name == name }
@@ -52,5 +53,17 @@ class Factory < ActiveRecord::Base
       end
       factory.name == name && factory_traits == trait_names
     end
+  end
+
+  # Return same factory. If if it is no asoociarion, overwrite new assos.
+  def self.same_factory_overwrite(assos, same_factory)
+    if assos == same_factory.assos
+      return same_factory
+    elsif !assos.empty? && same_factory.assos.empty?
+      assos.each do |asso|
+        Asso.create_new_asso_and_relation(asso, same_factory)
+      end
+    end
+    return same_factory.reload
   end
 end
