@@ -64,6 +64,6 @@ class Factory < ActiveRecord::Base
         Asso.create_new_asso_and_relation(asso, same_factory)
       end
     end
-    return same_factory.reload
+    same_factory.reload
   end
 end

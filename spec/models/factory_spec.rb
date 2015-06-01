@@ -33,16 +33,16 @@ RSpec.describe Factory, type: :model do
     let!(:trait_relation1) { TraitRelation.create(factory_id: same_factory.id, trait_id: trait1.id) }
 
     context "have asso case" do
-      let!(:assos) { [{ name: "asso1", traits: ["trait2"], factory_name: "same_factory"}] }
+      let!(:assos) { [{ name: "asso1", traits: ["trait2"], factory_name: "same_factory" }] }
       it "same factory have no asso" do
-        expect{ Factory.same_factory_overwrite(assos, same_factory) }.to change{ same_factory.assos.size }.from(0).to(1)
+        expect { Factory.same_factory_overwrite(assos, same_factory) }.to change{ same_factory.assos.size }.from(0).to(1)
       end
       context "same factory have assos" do
         let!(:factory_of_asso) { create :factory, name: "factory_of_asso1" }
         let!(:asso1) { create :asso, name: "asso1", factory_id: factory_of_asso.id }
         let!(:asso_relation1) { create :asso_relation, factory_id: same_factory.id, asso_id: asso1.id }
         it do
-          expect{ Factory.same_factory_overwrite(assos, same_factory) }.not_to change{ same_factory.assos.size }
+          expect { Factory.same_factory_overwrite(assos, same_factory) }.not_to change{ same_factory.assos.size }
         end
       end
     end
@@ -50,14 +50,14 @@ RSpec.describe Factory, type: :model do
     context "have no asso case" do
       let!(:assos) { [] }
       it "same factory have no asso" do
-        expect{ Factory.same_factory_overwrite(assos, same_factory) }.not_to change{ same_factory.assos.size }
+        expect { Factory.same_factory_overwrite(assos, same_factory) }.not_to change{ same_factory.assos.size }
       end
       context "same factory have assos" do
         let!(:factory_of_asso) { create :factory, name: "factory_of_asso1" }
         let!(:asso1) { create :asso, name: "asso1", factory_id: factory_of_asso.id }
         let!(:asso_relation1) { create :asso_relation, factory_id: same_factory.id, asso_id: asso1.id }
         it do
-          expect{ Factory.same_factory_overwrite(assos, same_factory) }.not_to change{ same_factory.assos.size }
+          expect { Factory.same_factory_overwrite(assos, same_factory) }.not_to change{ same_factory.assos.size }
         end
       end
     end

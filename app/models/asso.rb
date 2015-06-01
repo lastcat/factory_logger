@@ -10,7 +10,7 @@ class Asso < ActiveRecord::Base
     # name: associarion_name
     # traits: String array of trait name
     # factory_name: name of asso's factory
-    factory = Factory.create_unique_factory(name: asso_hash[:factory_name], traits: asso_hash[:traits], assos:[])
+    factory = Factory.create_unique_factory(name: asso_hash[:factory_name], traits: asso_hash[:traits], assos: [])
     return if same_asso_exist?(asso_hash[:name], factory, parent_factory)
     new_asso = Asso.create(name: asso_hash[:name], factory_id: factory.id)
     AssoRelation.create(factory_id: parent_factory.id, asso_id: new_asso.id)
