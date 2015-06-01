@@ -3,8 +3,6 @@ class CreateAssoRelations < ActiveRecord::Migration
     create_table :asso_relations do |t|
       t.integer :factory_id
       t.integer :asso_id
-
-      t.timestamps null: false
     end
   end
 end
