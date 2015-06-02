@@ -2,7 +2,8 @@ require "active_support/configurable"
 module FactoryLogger
   class Config
     include ActiveSupport::Configurable
-    config_accessor :something
+    config_accessor :redis_host
+    config_accessor :redis_port
   end
 
   def self.configure(&block)

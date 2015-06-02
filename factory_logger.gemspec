@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["kokodoko966@gmail.com"]
   s.homepage    = "https://github.com/lastcat/factory_logger.git"
   s.summary     = "This is rails engine for logging FactoryGirl's execuation."
-  s.description = "See <blog entry url>."
+  s.description = "See <http://hackerslab.aktsk.jp/technology/factorygirl_log/>."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
