@@ -67,6 +67,7 @@ RSpec.describe Factory, type: :model do
     context "already same factory exist case" do
       let!(:factory1) { create :factory, name: "factory1" }
       it "don't create new factory" do
+        REDIS.sadd("factory_names", factory1.name)
         expect{ Factory.create_unique_factory(name: "factory1", traits: [], assos: []) }.not_to change { Factory.all }
       end
     end
@@ -74,13 +75,43 @@ RSpec.describe Factory, type: :model do
     context "same factory dont't exist case" do
       let!(:factory1) { create :factory, name: "factory1" }
       it "create new factory" do
+        REDIS.sadd("factory_names", factory1.name)
         expect{ Factory.create_unique_factory(name: "factory1", traits: ["trait2_of_factory1"], assos:[]) }.to change { Factory.all.size }.from(1).to(2)
       end
 
       it "create trait" do
+        REDIS.sadd("factory_names", factory1.name)
         Factory.create_unique_factory(name: "factory1", traits: ["trait2_of_factory1"], assos:[])
         expect(Trait.any? { |trait| trait.name == "trait2_of_factory1" && trait.trait_relations.first.factory.name == "factory1" }).to eq true
       end
+
+      context  "create trait relation for already existing trait" do
+        let!(:existing_trait) { create :trait, name: "existing_trait" }
+        let!(:trait_relation) { create :trait_relation, factory_id: factory1.id, trait_id: existing_trait.id }
+        it "create new trait relation" do
+          REDIS.sadd("factory_names", factory1.name)
+          REDIS.sadd("traits", { name: existing_trait.name, factory_name: factory1.name, factory_id: factory1.id }.to_json )
+          expect{ Factory.create_unique_factory(name: "factory1", traits: ["existing_trait", "not_existing_trait"], assos:[]) }.to change { TraitRelation.all.size }.from(1).to(3)
+        end
+        it "don't create new trait relation" do
+          REDIS.sadd("factory_names", factory1.name)
+          REDIS.sadd("traits", { name: existing_trait.name, factory_name: factory1.name, factory_id: factory1.id }.to_json)
+          expect{ Factory.create_unique_factory(name: "factory1", traits: ["existing_trait", "not_existing_trait"], assos:[]) }.to change { Trait.all.size }.from(1).to(2)
+        end
+      end
+    end
+  end
+
+  describe "#same_trait" do
+    it "same trait found case" do
+      REDIS.sadd("traits", { name: "trait1", factory_name: "factory1", factoty_id: 1 }.to_json )
+      REDIS.sadd("traits", { name: "trait2", factory_name: "factory1", factoty_id: 1 }.to_json )
+      expect(Factory.same_trait("trait1", "factory1")).to eq({ "name" => "trait1", "factory_name" => "factory1", "factoty_id" => 1 } )
+    end
+    it "same trait couldn't found case" do
+      REDIS.sadd("traits", { name: "trait1", factory_name: "factory1", factoty_id: 1 }.to_json )
+      REDIS.sadd("traits", { name: "trait2", factory_name: "factory1", factoty_id: 1 }.to_json )
+      expect(Factory.same_trait("trait3", "factory1")).to eq nil
     end
   end
 

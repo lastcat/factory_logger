@@ -1,3 +1,4 @@
+require "pry-byebug"
 # This is Factroy pattern(indentified factory_name and having traits) class.
 class Factory < ActiveRecord::Base
   has_many :trait_relations
@@ -16,7 +17,7 @@ class Factory < ActiveRecord::Base
     name = inspected_factory[:name]
     traits = inspected_factory[:traits]
     assos = inspected_factory[:assos]
-    is_first = true unless Factory.pluck(:name).include?(name)
+    is_first = REDIS.sadd("factory_names", name)
     if is_first
       new_factory = Factory.create(name: name)
       traits.each do |trait|
@@ -30,9 +31,9 @@ class Factory < ActiveRecord::Base
       return same_factory_overwrite(assos, same_factory) if same_factory
       new_factory = Factory.create(name: name)
       traits.each do |trait|
-        # TODO: more faster
-        existing_trait = Trait.find { |tr| tr.name == trait && tr.trait_relations.first.factory.name == name }
+        existing_trait = Factory.same_trait(trait, name)
         if existing_trait
+          existing_trait = Trait.find(existing_trait["factory_id"])
           TraitRelation.create_new_trait_relation(new_factory, existing_trait)
         else
           Trait.create_new_trait_and_relation(new_factory, trait)
@@ -68,6 +69,12 @@ class Factory < ActiveRecord::Base
       end
     end
     same_factory.reload
+  end
+
+  # Return same name and parent factory trait from redis.
+  def self.same_trait(trait, factory_name)
+    traits = REDIS.sunion("traits").map{ |tr| JSON.parse(tr) }
+    traits.find { |tr| tr["name"] == trait && tr["factory_name"]== factory_name }
   end
 
   # Return max depth of association
