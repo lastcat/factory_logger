@@ -30,6 +30,7 @@ class Factory < ActiveRecord::Base
       return same_factory_overwrite(assos, same_factory) if same_factory
       new_factory = Factory.create(name: name)
       traits.each do |trait|
+        # TODO: more faster
         existing_trait = Trait.find { |tr| tr.name == trait && tr.trait_relations.first.factory.name == name }
         if existing_trait
           TraitRelation.create_new_trait_relation(new_factory, existing_trait)
@@ -46,7 +47,8 @@ class Factory < ActiveRecord::Base
 
   # Return same name and same traits having factory.
   def self.same_factory(name, trait_names)
-    Factory.all.find do |factory|
+    # TODO: more faster
+    Factory.find do |factory|
       if factory.traits.nil?
         factory_traits = []
       else

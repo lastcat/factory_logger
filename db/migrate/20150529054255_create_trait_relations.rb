@@ -4,5 +4,6 @@ class CreateTraitRelations < ActiveRecord::Migration
       t.integer :factory_id
       t.integer :trait_id
     end
+    add_index :trait_relations, [:factory_id, :trait_id]
   end
 end

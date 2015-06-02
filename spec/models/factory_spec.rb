@@ -79,7 +79,7 @@ RSpec.describe Factory, type: :model do
 
       it "create trait" do
         Factory.create_unique_factory(name: "factory1", traits: ["trait2_of_factory1"], assos:[])
-        expect(Trait.all.any? { |trait| trait.name == "trait2_of_factory1" && trait.trait_relations.first.factory.name == "factory1" }).to eq true
+        expect(Trait.any? { |trait| trait.name == "trait2_of_factory1" && trait.trait_relations.first.factory.name == "factory1" }).to eq true
       end
     end
   end

@@ -8,6 +8,7 @@ class AssoRelation < ActiveRecord::Base
     return if assos.empty?
     assos.each do |asso|
       asso_factory = Factory.same_factory(asso.name, asso.traits)
+      # TODO: more faster
       unless AssoRelation.any? { |a_r| a_r.factory == new_factory && a_r.asso == asso }
         AssoRelation.create(factory_id: new_factory.id, asso_id: asso_factory.id)
       end

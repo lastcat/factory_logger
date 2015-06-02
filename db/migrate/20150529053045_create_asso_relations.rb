@@ -4,5 +4,6 @@ class CreateAssoRelations < ActiveRecord::Migration
       t.integer :factory_id
       t.integer :asso_id
     end
+    add_index :asso_relations, [:factory_id, :asso_id]
   end
 end

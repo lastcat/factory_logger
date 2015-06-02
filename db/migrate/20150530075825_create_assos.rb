@@ -4,5 +4,6 @@ class CreateAssos < ActiveRecord::Migration
       t.string :name
       t.integer :factory_id
     end
+    add_index :assos, [:name]
   end
 end
