@@ -72,7 +72,7 @@ class Factory < ActiveRecord::Base
   # Return same name and parent factory trait from redis.
   def self.same_trait(trait, factory_name)
     traits = REDIS.smembers("traits").map { |tr| JSON.parse(tr) }
-    traits.find { |tr| tr["name"] == trait && tr["factory_name"]　== factory_name }
+    traits.find { |tr| tr["name"] == trait && tr["factory_name"] == factory_name }
   end
 
   # Return max depth of association

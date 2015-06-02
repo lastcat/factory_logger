@@ -28,9 +28,9 @@ RSpec.describe Factory, type: :model do
                                             id: factoryA_with_trait.id
                                           }.to_json)
         expect(Factory.same_factory("factoryA", ["A's_trait"])).to eq ({
-                                                                        "factory_name" =>  factoryA_with_trait.name,
-                                                                        "traits" => factoryA_with_trait.traits.map(&:name).to_s,
-                                                                        "id" => factoryA_with_trait.id
+                                                                          "factory_name" => factoryA_with_trait.name,
+                                                                          "traits" => factoryA_with_trait.traits.map(&:name).to_s,
+                                                                          "id" => factoryA_with_trait.id
                                                                        })
       end
     end
@@ -95,18 +95,22 @@ RSpec.describe Factory, type: :model do
         let!(:existing_trait) { create :trait, name: "existing_trait" }
         let!(:trait_relation) { create :trait_relation, factory_id: factory1.id, trait_id: existing_trait.id }
         it "create new trait relation" do
-          expect { Factory.create_unique_factory(
-                                                name: "factory1",
-                                                traits: ["existing_trait", "not_existing_trait"],
-                                                assos: []
-                                                ) }.to change { TraitRelation.all.size }.from(1).to(3)
+          expect do
+            Factory.create_unique_factory(
+                                           name: "factory1",
+                                           traits: ["existing_trait", "not_existing_trait"],
+                                           assos: []
+                                         )
+          end.to change { TraitRelation.all.size }.from(1).to(3)
         end
         it "don't create new trait" do
-          expect { Factory.create_unique_factory(
-                                                  name: "factory1",
-                                                  traits: ["existing_trait", "not_existing_trait"],
-                                                  assos: []
-                                                ) }.to change { Trait.all.size }.from(1).to(2)
+          expect do
+             Factory.create_unique_factory(
+                                            name: "factory1",
+                                            traits: ["existing_trait", "not_existing_trait"],
+                                            assos: []
+                                          )
+          end.to change { Trait.all.size }.from(1).to(2)
         end
       end
     end
