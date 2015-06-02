@@ -97,19 +97,19 @@ RSpec.describe Factory, type: :model do
         it "create new trait relation" do
           expect do
             Factory.create_unique_factory(
-                                           name: "factory1",
-                                           traits: ["existing_trait", "not_existing_trait"],
-                                           assos: []
+                                            name: "factory1",
+                                            traits: ["existing_trait", "not_existing_trait"],
+                                            assos: []
                                          )
           end.to change { TraitRelation.all.size }.from(1).to(3)
         end
         it "don't create new trait" do
           expect do
-             Factory.create_unique_factory(
+            Factory.create_unique_factory(
                                             name: "factory1",
                                             traits: ["existing_trait", "not_existing_trait"],
                                             assos: []
-                                          )
+                                         )
           end.to change { Trait.all.size }.from(1).to(2)
         end
       end
@@ -120,7 +120,7 @@ RSpec.describe Factory, type: :model do
     it "same trait found case" do
       REDIS.sadd("traits", { name: "trait1", factory_name: "factory1", factoty_id: 1 }.to_json)
       REDIS.sadd("traits", { name: "trait2", factory_name: "factory1", factoty_id: 1 }.to_json)
-      expect(Factory.same_trait("trait1", "factory1")).to eq({ "name" => "trait1", "factory_name" => "factory1", "factoty_id" => 1 } )
+      expect(Factory.same_trait("trait1", "factory1")).to eq({ "name" => "trait1", "factory_name" => "factory1", "factoty_id" => 1 })
     end
     it "same trait couldn't found case" do
       REDIS.sadd("traits", { name: "trait1", factory_name: "factory1", factoty_id: 1 }.to_json)
