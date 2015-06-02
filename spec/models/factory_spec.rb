@@ -22,8 +22,16 @@ RSpec.describe Factory, type: :model do
       let!(:factoryA_with_trait) { create :factory, name: "factoryA" }
       it do
         Trait.create_new_trait_and_relation(factoryA_with_trait, "A's_trait")
-        REDIS.sadd("factory_with_traits", { factory_name: factoryA_with_trait.name, traits: factoryA_with_trait.traits.map(&:name).to_s, id: factoryA_with_trait.id }.to_json)
-        expect(Factory.same_factory("factoryA", ["A's_trait"])).to eq ({ "factory_name" =>  factoryA_with_trait.name, "traits" => factoryA_with_trait.traits.map(&:name).to_s, "id" => factoryA_with_trait.id })
+        REDIS.sadd("factory_with_traits", {
+                                            factory_name: factoryA_with_trait.name,
+                                            traits: factoryA_with_trait.traits.map(&:name).to_s,
+                                            id: factoryA_with_trait.id
+                                          }.to_json)
+        expect(Factory.same_factory("factoryA", ["A's_trait"])).to eq ({
+                                                                        "factory_name" =>  factoryA_with_trait.name,
+                                                                        "traits" => factoryA_with_trait.traits.map(&:name).to_s,
+                                                                        "id" => factoryA_with_trait.id
+                                                                       })
       end
     end
   end
@@ -83,14 +91,22 @@ RSpec.describe Factory, type: :model do
         expect(Trait.any? { |trait| trait.name == "trait2_of_factory1" && trait.trait_relations.first.factory.name == "factory1" }).to eq true
       end
 
-      context  "create trait relation for already existing trait" do
+      context "create trait relation for already existing trait" do
         let!(:existing_trait) { create :trait, name: "existing_trait" }
         let!(:trait_relation) { create :trait_relation, factory_id: factory1.id, trait_id: existing_trait.id }
         it "create new trait relation" do
-          expect{ Factory.create_unique_factory(name: "factory1", traits: ["existing_trait", "not_existing_trait"], assos:[]) }.to change { TraitRelation.all.size }.from(1).to(3)
+          expect { Factory.create_unique_factory(
+                                                name: "factory1",
+                                                traits: ["existing_trait", "not_existing_trait"],
+                                                assos: []
+                                                ) }.to change { TraitRelation.all.size }.from(1).to(3)
         end
         it "don't create new trait" do
-          expect{ Factory.create_unique_factory(name: "factory1", traits: ["existing_trait", "not_existing_trait"], assos:[]) }.to change { Trait.all.size }.from(1).to(2)
+          expect { Factory.create_unique_factory(
+                                                  name: "factory1",
+                                                  traits: ["existing_trait", "not_existing_trait"],
+                                                  assos: []
+                                                ) }.to change { Trait.all.size }.from(1).to(2)
         end
       end
     end
@@ -98,13 +114,13 @@ RSpec.describe Factory, type: :model do
 
   describe "#same_trait" do
     it "same trait found case" do
-      REDIS.sadd("traits", { name: "trait1", factory_name: "factory1", factoty_id: 1 }.to_json )
-      REDIS.sadd("traits", { name: "trait2", factory_name: "factory1", factoty_id: 1 }.to_json )
+      REDIS.sadd("traits", { name: "trait1", factory_name: "factory1", factoty_id: 1 }.to_json)
+      REDIS.sadd("traits", { name: "trait2", factory_name: "factory1", factoty_id: 1 }.to_json)
       expect(Factory.same_trait("trait1", "factory1")).to eq({ "name" => "trait1", "factory_name" => "factory1", "factoty_id" => 1 } )
     end
     it "same trait couldn't found case" do
-      REDIS.sadd("traits", { name: "trait1", factory_name: "factory1", factoty_id: 1 }.to_json )
-      REDIS.sadd("traits", { name: "trait2", factory_name: "factory1", factoty_id: 1 }.to_json )
+      REDIS.sadd("traits", { name: "trait1", factory_name: "factory1", factoty_id: 1 }.to_json)
+      REDIS.sadd("traits", { name: "trait2", factory_name: "factory1", factoty_id: 1 }.to_json)
       expect(Factory.same_trait("trait3", "factory1")).to eq nil
     end
   end
