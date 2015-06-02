@@ -28,7 +28,7 @@ class Factory < ActiveRecord::Base
       end
     else
       same_factory = same_factory(name, traits)
-      return same_factory_overwrite(assos, same_factory) if same_factory
+      return same_factory_overwrite(assos, Factory.find(same_factory["id"])) if same_factory
       new_factory = Factory.create(name: name)
       traits.each do |trait|
         existing_trait = Factory.same_trait(trait, name)
@@ -43,20 +43,18 @@ class Factory < ActiveRecord::Base
         end
       end
     end
+    REDIS.sadd("factory_with_traits", { factory_name: new_factory.name, traits: new_factory.traits.map(&:name).to_s, id: new_factory.id }.to_json)
     new_factory
   end
 
   # Return same name and same traits having factory.
   def self.same_factory(name, trait_names)
-    # TODO: more faster
-    Factory.find do |factory|
-      if factory.traits.nil?
-        factory_traits = []
-      else
-        factory_traits = factory.traits.map(&:name)
-      end
-      factory.name == name && factory_traits == trait_names
+    trait_names = trait_names.to_s
+    result = REDIS.smembers("factory_with_traits").find do |fwt|
+      factory_hash = JSON.parse(fwt)
+      factory_hash["factory_name"] == name && factory_hash["traits"] == trait_names
     end
+    JSON.parse(result) if result
   end
 
   # Return same factory. If if it is no asoociarion, overwrite new assos.
@@ -73,7 +71,7 @@ class Factory < ActiveRecord::Base
 
   # Return same name and parent factory trait from redis.
   def self.same_trait(trait, factory_name)
-    traits = REDIS.sunion("traits").map{ |tr| JSON.parse(tr) }
+    traits = REDIS.smembers("traits").map{ |tr| JSON.parse(tr) }
     traits.find { |tr| tr["name"] == trait && tr["factory_name"]== factory_name }
   end
 

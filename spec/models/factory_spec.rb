@@ -22,7 +22,8 @@ RSpec.describe Factory, type: :model do
       let!(:factoryA_with_trait) { create :factory, name: "factoryA" }
       it do
         Trait.create_new_trait_and_relation(factoryA_with_trait, "A's_trait")
-        expect(Factory.same_factory("factoryA", ["A's_trait"])).to eq factoryA_with_trait
+        REDIS.sadd("factory_with_traits", { factory_name: factoryA_with_trait.name, traits: factoryA_with_trait.traits.map(&:name).to_s, id: factoryA_with_trait.id }.to_json)
+        expect(Factory.same_factory("factoryA", ["A's_trait"])).to eq ({ "factory_name" =>  factoryA_with_trait.name, "traits" => factoryA_with_trait.traits.map(&:name).to_s, "id" => factoryA_with_trait.id })
       end
     end
   end
