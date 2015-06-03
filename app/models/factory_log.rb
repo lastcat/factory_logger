@@ -29,7 +29,8 @@ class FactoryLog < ActiveRecord::Base
                       factory: log.factory_name,
                       total_time: time,
                       count: 1,
-                      average_time: time
+                      average_time: time,
+                      factory_id: log.factory_id
                     )
       end
     end
