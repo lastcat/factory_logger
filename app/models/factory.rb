@@ -31,9 +31,8 @@ class Factory < ActiveRecord::Base
       return same_factory_overwrite(assos, Factory.find(same_factory["id"])) if same_factory
       new_factory = Factory.create(name: name)
       traits.each do |trait|
-        existing_trait = Factory.same_trait(trait, name)
-        if existing_trait
-          existing_trait = Trait.find(existing_trait["factory_id"])
+        if Factory.same_trait_exist?(trait, name)
+          existing_trait = Trait.where(name: trait).select { |tr| tr.factories.first.name == name }.first
           TraitRelation.create_new_trait_relation(new_factory, existing_trait)
         else
           Trait.create_new_trait_and_relation(new_factory, trait)
@@ -69,10 +68,9 @@ class Factory < ActiveRecord::Base
     same_factory.reload
   end
 
-  # Return same name and parent factory trait from redis.
-  def self.same_trait(trait, factory_name)
-    traits = REDIS.smembers("traits").map { |tr| JSON.parse(tr) }
-    traits.find { |tr| tr["name"] == trait && tr["factory_name"] == factory_name }
+  # Return whether same name and parent factory trait exist.
+  def self.same_trait_exist?(trait, factory_name)
+    !REDIS.sadd("traits", { name: trait, factory_name: factory_name }.to_json)
   end
 
   # Return max depth of association

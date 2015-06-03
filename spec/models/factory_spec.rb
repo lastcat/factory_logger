@@ -116,16 +116,16 @@ RSpec.describe Factory, type: :model do
     end
   end
 
-  describe "#same_trait" do
+  describe "#same_trait_exist?" do
     it "same trait found case" do
-      REDIS.sadd("traits", { name: "trait1", factory_name: "factory1", factoty_id: 1 }.to_json)
-      REDIS.sadd("traits", { name: "trait2", factory_name: "factory1", factoty_id: 1 }.to_json)
-      expect(Factory.same_trait("trait1", "factory1")).to eq({ "name" => "trait1", "factory_name" => "factory1", "factoty_id" => 1 })
+      REDIS.sadd("traits", { name: "trait1", factory_name: "factory1" }.to_json)
+      REDIS.sadd("traits", { name: "trait2", factory_name: "factory1" }.to_json)
+      expect(Factory.same_trait_exist?("trait1", "factory1")).to eq true
     end
     it "same trait couldn't found case" do
-      REDIS.sadd("traits", { name: "trait1", factory_name: "factory1", factoty_id: 1 }.to_json)
-      REDIS.sadd("traits", { name: "trait2", factory_name: "factory1", factoty_id: 1 }.to_json)
-      expect(Factory.same_trait("trait3", "factory1")).to eq nil
+      REDIS.sadd("traits", { name: "trait1", factory_name: "factory1" }.to_json)
+      REDIS.sadd("traits", { name: "trait2", factory_name: "factory1" }.to_json)
+      expect(Factory.same_trait_exist?("trait3", "factory1")).to eq false
     end
   end
 
