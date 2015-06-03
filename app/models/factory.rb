@@ -87,11 +87,11 @@ class Factory < ActiveRecord::Base
     queue.unshift(self)
     results = []
     generation = 0
-    while(!queue.empty?)
+    while (!queue.empty?)
       count = queue.inject(0) { |sum, factory| sum + factory.assos.size }
       break if count == 0
       results[generation] = []
-      while(count > 0)
+      while (count > 0)
         queue.pop.assos.each do |asso|
           factory = asso.factory
           results[generation].push(factory)
