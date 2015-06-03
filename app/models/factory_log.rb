@@ -19,8 +19,6 @@ class FactoryLog < ActiveRecord::Base
     results = []
     FactoryLog.all.each do |log|
       time = log.execution_time
-      #毎回これやってるの不要では？メモ化できるのでは
-      #というかFactoryと連結する必要あんまりないのか。
       if index = results.index { |cd| cd[:factory] == log.factory_name }
         hash_data = results[index]
         hash_data[:total_time] += time
