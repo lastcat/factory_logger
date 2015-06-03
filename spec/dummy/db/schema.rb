@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 20150530075825) do
 
   create_table "factory_logs", force: :cascade do |t|
     t.integer "factory_id"
+    t.string  "factory_name"
     t.float   "execution_time"
   end
 
