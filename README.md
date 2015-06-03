@@ -1,6 +1,6 @@
 # FactoryLogger
 
-This gem gives you Factory logging model.For more detail, About motivation, please see <blog url>.
+This gem gives you Factory logging model.For more detail, About motivation, please see http://hackerslab.aktsk.jp/technology/factorygirl_log/.
 
 [![Code Climate](https://codeclimate.com/github/lastcat/factory_logger/badges/gpa.svg)](https://codeclimate.com/github/lastcat/factory_logger)
 [![Build Status](https://travis-ci.org/lastcat/factory_logger.svg?branch=setting_coveralls)](https://travis-ci.org/lastcat/factory_logger)
@@ -36,13 +36,11 @@ instrumentation_payload = { name: @name, strategy: runner_strategy, traits: @tra
 next, you register notification subscriber.write,
 
 ```ruby
-ActiveSupport::Notifications.subscribe("factory_girl.run_factory") do |_name, start, finish, _id, payload| # rubocop:disable ParameterLists
+ActiveSupport::Notifications.subscribe("factory_girl.run_factory") do |_name, start, finish, _id, payload|
   execution_time_in_seconds = finish - start
-
-  FactoryLog.create(name: payload[:name],
-                    traits: payload[:traits].to_s,
-                    assos: FactoryInspector.factory_inspect(payload[:factory])[:assos].map{ |asso| asso[:name].to_sym }.to_s,
-                    time: execution_time_in_seconds)
+  traits =  payload[:traits].map{|t| t.to_s}
+  factory = FactoryInspector.factory_inspect(payload[:factory]).merge(traits: traits)
+  FactoryLog.logging(factory, execution_time_in_seconds)
 end
 ```
 
@@ -53,7 +51,9 @@ at `config/initializers/notifications.rb`.
 If you want to factory's execution infos, after `rails c -etest`,
 
 ```
-$ FactoryLog.time_ranking
+$ FactoryLog.ranking
+$ Factory.all
+$ Factory.find(2).traits
 ```
 
 There are several class methods, please read `app/models/factory_log.rb`.
@@ -74,16 +74,28 @@ change like this,
 
 ```ruby
 config.before(:suite) do
+  REDIS.flushdb #this is Redis client for this engine.
   DatabaseCleaner.strategy = :truncation
-  DatabaseCleaner.clean_with(:truncation)
+  DatabaseCleaner.clean
   DatabaseCleaner[:active_record, model: ActiveRecord::Base.using(:master)]
 end
 
 config.after(:each) do
-  DatabaseCleaner.strategy = :truncation, {:except => %w[factory_logs]}
+  DatabaseCleaner.strategy = :truncation, {:except => %w[factory_logs factories assos traits asso_relations trait_relations] }
   DatabaseCleaner.clean
 end
 ```
+
+This gem use [redis](http://redis.io/). You can configure setting configuration Like this,
+
+```.rb
+FactoryLogger.configure do |config|
+  config.redis_host = "http://regis_host_url"
+  config.redis_port = 4649
+end
+```
+
+Default setting is `localhost`, and `6379` port. Sorry, now supporting tcp conecttion only (waiting for your contribute!).
 
 ## Contributing
 
