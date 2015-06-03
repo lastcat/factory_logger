@@ -12,13 +12,13 @@ RSpec.describe FactoryLog, type: :model do
       FactoryLog.logging(inspected_factory2, 2.1)
       expect(FactoryLog.ranking).to eq [
                                          {
-                                            factory: factory1,
+                                            factory: factory1.to_s,
                                             total_time: 1.0 + 1.1 + 1.0,
                                             count: 3,
                                             average_time: (1.0 + 1.1 + 1.0) / 3
                                          },
                                          {
-                                            factory: factory2,
+                                            factory: factory2.to_s,
                                             total_time: 2.1,
                                             count: 1,
                                             average_time: 2.1
