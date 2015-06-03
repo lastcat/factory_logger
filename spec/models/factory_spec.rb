@@ -96,7 +96,6 @@ RSpec.describe Factory, type: :model do
         let!(:trait_relation) { create :trait_relation, factory_id: factory1.id, trait_id: existing_trait.id }
         it "create new trait relation" do
           expect do
-            #REDIS.sadd("traits", name: "existing_trait", factory: "factory1")
             Factory.create_unique_factory(
                                             name: "factory1",
                                             traits: ["existing_trait", "not_existing_trait"],
@@ -105,7 +104,6 @@ RSpec.describe Factory, type: :model do
           end.to change { TraitRelation.all.size }.from(1).to(3)
         end
         it "don't create new trait" do
-          #REDIS.sadd("traits", name: "existing_trait", factory: "factory1")
           expect do
             Factory.create_unique_factory(
                                             name: "factory1",
