@@ -80,4 +80,31 @@ class Factory < ActiveRecord::Base
       asso.factory.depth
     end.max + 1
   end
+
+  # Return factory's familty array. index equal to depth.
+  def family
+    queue = []
+    queue.unshift(self)
+    results = []
+    generation = 0
+    while (!queue.empty?)
+      count = queue.inject(0) { |sum, factory| sum + factory.assos.size }
+      break if count == 0
+      results[generation] = []
+      while (count > 0)
+        queue.pop.assos.each do |asso|
+          factory = asso.factory
+          results[generation].push(factory)
+          queue.unshift(factory)
+          count -= 1
+        end
+      end
+      generation += 1
+    end
+    results
+  end
+
+  def to_s
+    name + ":" + traits.map(&:name).join(",").to_s
+  end
 end
