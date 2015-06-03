@@ -3,7 +3,7 @@ FactoryGirl.define do
     factory_id 0
     trait_id 0
     after(:create) do |trait_relation|
-      REDIS.sadd("traits", { name: trait_relation.trait.name, factory_name: trait_relation.factory.name, factory_id: trait_relation.factory.id }.to_json)
+      REDIS.sadd("traits", { name: trait_relation.trait.name, factory_name: trait_relation.factory.name}.to_json)
     end
   end
 end

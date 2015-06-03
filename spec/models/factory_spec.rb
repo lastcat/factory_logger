@@ -96,6 +96,7 @@ RSpec.describe Factory, type: :model do
         let!(:trait_relation) { create :trait_relation, factory_id: factory1.id, trait_id: existing_trait.id }
         it "create new trait relation" do
           expect do
+            #REDIS.sadd("traits", name: "existing_trait", factory: "factory1")
             Factory.create_unique_factory(
                                             name: "factory1",
                                             traits: ["existing_trait", "not_existing_trait"],
@@ -104,6 +105,7 @@ RSpec.describe Factory, type: :model do
           end.to change { TraitRelation.all.size }.from(1).to(3)
         end
         it "don't create new trait" do
+          #REDIS.sadd("traits", name: "existing_trait", factory: "factory1")
           expect do
             Factory.create_unique_factory(
                                             name: "factory1",
@@ -116,16 +118,16 @@ RSpec.describe Factory, type: :model do
     end
   end
 
-  describe "#same_trait" do
+  describe "#same_trait_exist?" do
     it "same trait found case" do
-      REDIS.sadd("traits", { name: "trait1", factory_name: "factory1", factoty_id: 1 }.to_json)
-      REDIS.sadd("traits", { name: "trait2", factory_name: "factory1", factoty_id: 1 }.to_json)
-      expect(Factory.same_trait("trait1", "factory1")).to eq({ "name" => "trait1", "factory_name" => "factory1", "factoty_id" => 1 })
+      REDIS.sadd("traits", { name: "trait1", factory_name: "factory1" }.to_json)
+      REDIS.sadd("traits", { name: "trait2", factory_name: "factory1" }.to_json)
+      expect(Factory.same_trait_exist?("trait1", "factory1")).to eq true
     end
     it "same trait couldn't found case" do
-      REDIS.sadd("traits", { name: "trait1", factory_name: "factory1", factoty_id: 1 }.to_json)
-      REDIS.sadd("traits", { name: "trait2", factory_name: "factory1", factoty_id: 1 }.to_json)
-      expect(Factory.same_trait("trait3", "factory1")).to eq nil
+      REDIS.sadd("traits", { name: "trait1", factory_name: "factory1" }.to_json)
+      REDIS.sadd("traits", { name: "trait2", factory_name: "factory1" }.to_json)
+      expect(Factory.same_trait_exist?("trait3", "factory1")).to eq false
     end
   end
 
