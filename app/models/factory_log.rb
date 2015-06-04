@@ -16,9 +16,14 @@ class FactoryLog < ActiveRecord::Base
     assos_logging_time = 0
     unless factory.assos.empty?
       number_of_assos = factory.family.flatten.size
-      assos_logging_time = FactoryLog.last(number_of_assos).inject(0) { |sum_logging_time, log| sum + log.logging_time }
+      assos_logging_time = FactoryLog.last(number_of_assos).inject(0) { |sum_logging_time, log| sum_logging_time + log.logging_time }
     end
-    FactoryLog.create(factory_id: factory.id, execution_time: execution_time - assos_logging_time, factory_name: factory.to_s, logging_time: create_unique_factory_cost)
+    FactoryLog.create(
+                        factory_id: factory.id,
+                        execution_time: execution_time - assos_logging_time,
+                        factory_name: factory.to_s,
+                        logging_time: create_unique_factory_cost
+                     )
   end
 
   # Return Factory's log ranking about total time it took.
