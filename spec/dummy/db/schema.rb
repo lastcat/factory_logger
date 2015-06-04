@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20150530075825) do
     t.integer "factory_id"
     t.string  "factory_name"
     t.float   "execution_time"
+    t.float   "logging_time"
   end
 
   create_table "trait_relations", force: :cascade do |t|
