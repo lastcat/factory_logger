@@ -105,6 +105,6 @@ class Factory < ActiveRecord::Base
   end
 
   def to_s
-    name + ":" + traits.map(&:name).join(",").to_s
+    name + "," + traits.map(&:name).join(",").to_s
   end
 end

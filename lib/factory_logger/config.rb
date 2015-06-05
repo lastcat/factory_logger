@@ -4,6 +4,7 @@ module FactoryLogger
     include ActiveSupport::Configurable
     config_accessor :redis_host
     config_accessor :redis_port
+    config_accessor :mode
   end
 
   def self.configure(&block)

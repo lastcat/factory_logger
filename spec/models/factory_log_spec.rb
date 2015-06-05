@@ -15,15 +15,13 @@ RSpec.describe FactoryLog, type: :model do
                                             factory: factory1.to_s,
                                             total_time: 1.0 + 1.1 + 1.0,
                                             count: 3,
-                                            average_time: (1.0 + 1.1 + 1.0) / 3,
-                                            factory_id: factory1.id
+                                            average_time: (1.0 + 1.1 + 1.0) / 3
                                          },
                                          {
                                             factory: factory2.to_s,
                                             total_time: 2.1,
                                             count: 1,
-                                            average_time: 2.1,
-                                            factory_id: factory2.id
+                                            average_time: 2.1
                                          }
                                        ]
     end
