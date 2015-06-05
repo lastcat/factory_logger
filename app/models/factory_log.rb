@@ -10,8 +10,12 @@ class FactoryLog < ActiveRecord::Base
   # assos: array of hash { name:association_name, traits: trait(string) array, factory_name: factory_name }
   # I wrote factroy_inspector gem (https://github.com/lastcat/factory_inspector). Please use it.
   def self.logging(inspected_factory, execution_time)
-    factory = Factory.create_unique_factory(inspected_factory)
-    FactoryLog.create(factory_id: factory.id, execution_time: execution_time, factory_name: factory.to_s)
+    if FactoryLogger.config.mode == "analyze"
+      factory_name = Factory.create_unique_factory(inspected_factory)
+    else
+      factory_name = inspected_factory[:name] + "," + inspected_factory[:traits].join(",")
+    end
+    FactoryLog.create(factory_name: factory_name, execution_time: execution_time)
   end
 
   # Return Factory's log ranking about total time it took.
@@ -30,7 +34,6 @@ class FactoryLog < ActiveRecord::Base
                       total_time: time,
                       count: 1,
                       average_time: time,
-                      factory_id: log.factory_id
                     )
       end
     end
