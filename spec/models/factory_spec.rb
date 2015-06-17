@@ -5,7 +5,7 @@ RSpec.describe Factory, type: :model do
   describe "#same_factory" do
     context "no same factory case" do
       let!(:factoryA) { create :factory, name: "factoryA" }
-      it { expect(Factory.same_factory("factoryC",[])).to eq nil }
+      it { expect(Factory.search_same_factory("factoryC",[])).to eq nil }
     end
 
     context "no same trait having case" do
@@ -13,7 +13,7 @@ RSpec.describe Factory, type: :model do
       let!(:factoryA_with_trait) { create :factory, name: "factoryA" }
       it do
         Trait.create_new_trait_and_relation(factoryA_with_trait, "A's_trait")
-        expect(Factory.same_factory("factoryA", ["hoge_trait"])).to eq nil
+        expect(Factory.search_same_factory("factoryA", ["hoge_trait"])).to eq nil
       end
     end
 
@@ -27,7 +27,7 @@ RSpec.describe Factory, type: :model do
                                             traits: factoryA_with_trait.traits.map(&:name).to_s,
                                             id: factoryA_with_trait.id
                                           }.to_json)
-        expect(Factory.same_factory("factoryA", ["A's_trait"])).to eq ({
+        expect(Factory.search_same_factory("factoryA", ["A's_trait"])).to eq ({
                                                                           "factory_name" => factoryA_with_trait.name,
                                                                           "traits" => factoryA_with_trait.traits.map(&:name).to_s,
                                                                           "id" => factoryA_with_trait.id
@@ -44,14 +44,14 @@ RSpec.describe Factory, type: :model do
     context "have asso case" do
       let!(:assos) { [{ name: "asso1", traits: ["trait2"], factory_name: "same_factory" }] }
       it "same factory have no asso" do
-        expect { Factory.same_factory_overwrite(assos, same_factory) }.to change{ same_factory.assos.size }.from(0).to(1)
+        expect { Factory.overwrite_same_factory_asso(assos, same_factory) }.to change{ same_factory.assos.size }.from(0).to(1)
       end
       context "same factory have assos" do
         let!(:factory_of_asso) { create :factory, name: "factory_of_asso1" }
         let!(:asso1) { create :asso, name: "asso1", factory_id: factory_of_asso.id }
         let!(:asso_relation1) { create :asso_relation, factory_id: same_factory.id, asso_id: asso1.id }
         it do
-          expect { Factory.same_factory_overwrite(assos, same_factory) }.not_to change{ same_factory.assos.size }
+          expect { Factory.overwrite_same_factory_asso(assos, same_factory) }.not_to change{ same_factory.assos.size }
         end
       end
     end
@@ -59,14 +59,14 @@ RSpec.describe Factory, type: :model do
     context "have no asso case" do
       let!(:assos) { [] }
       it "same factory have no asso" do
-        expect { Factory.same_factory_overwrite(assos, same_factory) }.not_to change{ same_factory.assos.size }
+        expect { Factory.overwrite_same_factory_asso(assos, same_factory) }.not_to change{ same_factory.assos.size }
       end
       context "same factory have assos" do
         let!(:factory_of_asso) { create :factory, name: "factory_of_asso1" }
         let!(:asso1) { create :asso, name: "asso1", factory_id: factory_of_asso.id }
         let!(:asso_relation1) { create :asso_relation, factory_id: same_factory.id, asso_id: asso1.id }
         it do
-          expect { Factory.same_factory_overwrite(assos, same_factory) }.not_to change{ same_factory.assos.size }
+          expect { Factory.overwrite_same_factory_asso(assos, same_factory) }.not_to change{ same_factory.assos.size }
         end
       end
     end

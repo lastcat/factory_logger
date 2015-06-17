@@ -15,4 +15,11 @@ class Asso < ActiveRecord::Base
     new_asso = Asso.create(name: asso_hash[:name], factory_id: factory.id)
     AssoRelation.create(factory_id: parent_factory.id, asso_id: new_asso.id)
   end
+
+  # TODO: write test
+  def self.create_new_assos_and_relations(new_factory, asso_names)
+    asso_names.each do |asso|
+      Asso.create_new_asso_and_relation(asso, new_factory)
+    end
+  end
 end

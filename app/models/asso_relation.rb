@@ -8,7 +8,7 @@ class AssoRelation < ActiveRecord::Base
     return if assos.empty?
     assos.each do |asso|
       asso_factory = Factory.same_factory(asso.name, asso.traits)
-      unless REDIS.sadd("asso_relations", { factory: new_factory.name, asso: asso.name }.to_json)
+      unless REDIS.sadd("asso_relations", { factory: new_factory, asso: asso.name }.to_json)
         AssoRelation.create(factory_id: new_factory.id, asso_id: asso_factory.id)
       end
     end
