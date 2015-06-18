@@ -28,9 +28,7 @@ class Factory < ActiveRecord::Base
       # So, We must overwrite it's asso and asso_relation in case the factory registered when it executed as other factory's asso before.
       return overwrite_same_factory_asso(assos, Factory.find(same_factory["id"])) unless same_factory.nil?
 
-      # This case is Factory(itself already registered) has new pattern traits conbination.
       new_factory = Factory.create(name: factory_name)
-      # Connect new trait and relation to factory.
       Trait.add_new_traits_and_relations(new_factory, traits)
       Asso.create_new_assos_and_relations(new_factory, assos)
     end
@@ -43,37 +41,6 @@ class Factory < ActiveRecord::Base
     new_factory
   end
 
-  # Return same name and same traits having factory.
-  def self.search_same_factory(name, trait_names)
-    trait_names = trait_names.to_s
-    result = REDIS.smembers("factory_with_traits").find do |fwt|
-      factory_hash = JSON.parse(fwt)
-      factory_hash["factory_name"] == name && factory_hash["traits"] == trait_names
-    end
-    JSON.parse(result) if result
-  end
-
-  # Return same factory. If if it is no asoociarion, overwrite new assos.
-  def self.overwrite_same_factory_asso(assos, same_factory)
-    if assos == same_factory.assos
-      return same_factory
-    elsif !assos.empty? && same_factory.assos.empty?
-      assos.each do |asso|
-        Asso.create_new_asso_and_relation(asso, same_factory)
-      end
-    end
-    same_factory.reload
-  end
-
-  # Return whether same name and parent factory trait exist.
-  def self.same_trait_exist?(trait, factory_name)
-    !REDIS.sadd("traits", { name: trait, factory_name: factory_name }.to_json)
-  end
-
-  def self.is_first_look_factory?
-    REDIS.sadd("factory_names", name).nil?
-  end
-
   # Return max depth of association
   def depth
     return 1 if assos.empty?
@@ -83,6 +50,7 @@ class Factory < ActiveRecord::Base
   end
 
   # Return factory's familty array. index equal to depth.
+  # TODO: 非自明なので分割するなりコメントなりもうちょっと書く
   def family
     queue = []
     queue.unshift(self)
@@ -108,4 +76,30 @@ class Factory < ActiveRecord::Base
   def to_s
     name + ":" + traits.map(&:name).join(",").to_s
   end
+
+  private
+    # Return same name and same traits having factory.
+    # TODO: improve algorithm
+    def self.search_same_factory(name, trait_names)
+      trait_names = trait_names.to_s
+      # This is maybe too slow
+      REDIS.smembers("factory_with_traits").find do |fwt|
+        factory_hash = JSON.parse(fwt)
+        return factory_hash if factory_hash["factory_name"] == name && factory_hash["traits"] == trait_names
+      end
+    end
+
+    # Return same factory. If if it is no asoociarion, overwrite new assos.
+    def self.overwrite_same_factory_asso(assos, same_factory)
+      if assos == same_factory.assos
+        return same_factory
+      elsif !assos.empty? && same_factory.assos.empty?
+        Asso.create_new_assos_and_relations(same_factory, assos)
+      end
+      same_factory.reload
+    end
+
+    def self.is_first_look_factory?
+      REDIS.sadd("factory_names", name).nil?
+    end
 end
