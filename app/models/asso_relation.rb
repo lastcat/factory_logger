@@ -17,6 +17,7 @@ class AssoRelation < ActiveRecord::Base
   end
 
   private
+  
     #TODO :write test
     def self.same_asso_relation_exist?(factory, asso_name)
       !(REDIS.sadd("asso_relations", { factory_id: factory.id, asso: asso_name }.to_json))

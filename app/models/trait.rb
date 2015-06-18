@@ -29,6 +29,7 @@ class Trait < ActiveRecord::Base
   end
 
   private
+  
     # TODO: write test
     def self.seach_existing_trait(trait_name, factory_name)
       where(name: trait_name).find { |tr| tr.factories.first.name == factory_name }

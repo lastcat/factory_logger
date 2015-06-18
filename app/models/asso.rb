@@ -30,6 +30,7 @@ class Asso < ActiveRecord::Base
   end
 
   private
+  
     # TODO: write test
     def self.same_asso_exist?(asso_name, factory_id, parent_factory_id)
       !(REDIS.sadd("assos", {

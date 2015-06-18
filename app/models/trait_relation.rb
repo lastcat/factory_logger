@@ -9,6 +9,7 @@ class TraitRelation < ActiveRecord::Base
   end
 
   private
+  
     def self.same_relation_exist?(factory, trait)
       !(REDIS.sadd("trait_relations", { factory: factory.id, trait: trait.id }.to_json))
     end

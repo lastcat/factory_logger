@@ -78,6 +78,7 @@ class Factory < ActiveRecord::Base
   end
 
   private
+  
     # Return same name and same traits having factory.
     # TODO: improve algorithm
     def self.search_same_factory(name, trait_names)
