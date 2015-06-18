@@ -19,6 +19,7 @@ class FactoryLog < ActiveRecord::Base
   end
 
   # Return Factory's log ranking about total time it took.
+  # TODO: もうちょっと説明的に、あるいは分割
   def self.ranking
     results = []
     FactoryLog.all.each do |log|
