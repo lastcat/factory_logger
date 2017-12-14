@@ -25,15 +25,7 @@ $ bundle exec rake db:migrate
 
 ## Usage
 
-First, modify your factroy_girl's code as follows,
-
-```ruby
-#@ lib/factory_girl/factory_runnner.rb
-
-instrumentation_payload = { name: @name, strategy: runner_strategy, traits: @traits, overrides: @overrides, factory: factory}
-```
-
-next, you register notification subscriber.write,
+First, you register notification subscriber.write,
 
 ```ruby
 ActiveSupport::Notifications.subscribe("factory_girl.run_factory") do |_name, start, finish, _id, payload|
