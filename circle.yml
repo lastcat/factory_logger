@@ -1,3 +1,20 @@
 machine:
   ruby:
     version: 2.2.2
+  environment:
+    REDIS_URL: redis://localhost:6379
+dependencies:
+  pre:
+    - gem install bundler
+  override:
+    - bundle install
+
+database:
+  override:
+    - bundle exec rake db:migrate
+
+test:
+  pre:
+    - sudo service redis-server start
+  override:
+    - bundle exec rspec
