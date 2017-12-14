@@ -28,7 +28,7 @@ $ bundle exec rake db:migrate
 First, you register notification subscriber.write,
 
 ```ruby
-ActiveSupport::Notifications.subscribe("factory_girl.run_factory") do |_name, start, finish, _id, payload|
+ActiveSupport::Notifications.subscribe("factory_bot.run_factory") do |_name, start, finish, _id, payload|
   execution_time_in_seconds = finish - start
   traits =  payload[:traits].map{|t| t.to_s}
   factory = FactoryInspector.factory_inspect(payload[:factory]).merge(traits: traits)

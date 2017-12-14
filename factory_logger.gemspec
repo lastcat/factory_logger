@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.authors     = ["yoshitake.nakaji"]
   s.email       = ["kokodoko966@gmail.com"]
   s.homepage    = "https://github.com/lastcat/factory_logger.git"
-  s.summary     = "This is rails engine for logging FactoryGirl's execuation."
+  s.summary     = "This is rails engine for logging FactoryBot's execuation."
   s.description = "See <http://hackerslab.aktsk.jp/technology/factorygirl_log/>."
   s.license     = "MIT"
 
@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "rspec-rails"
-  s.add_development_dependency "factory_girl_rails"
+  s.add_development_dependency "factory_bot_rails"
   s.add_development_dependency "database_cleaner"
   s.add_development_dependency "pry-byebug"
 end

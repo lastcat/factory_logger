@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :factory_log do
     name "factoryA"
     traits "[]"

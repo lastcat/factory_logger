@@ -1,5 +1,5 @@
 # relationごと作ってくれるfactoryを作ったほうが良い
-FactoryGirl.define do
+FactoryBot.define do
   factory :asso do
     name "MyString"
     factory_id 0

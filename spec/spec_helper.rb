@@ -6,7 +6,7 @@ Coveralls.wear!
 require File.expand_path("../dummy/config/environment.rb",  __FILE__)
 require "rspec/rails"
 require "rspec/autorun"
-require "factory_girl_rails"
+require "factory_bot_rails"
 require "database_cleaner"
 
 Rails.backtrace_cleaner.remove_silencers!
@@ -17,7 +17,7 @@ RSpec.configure do |config|
   config.use_transactional_fixtures = true
   config.infer_base_class_for_anonymous_controllers = false
   config.order = "random"
-  config.include FactoryGirl::Syntax::Methods
+  config.include FactoryBot::Syntax::Methods
 
   ###################### DatabaseCleaner Setting ######################
   config.before(:suite) do
