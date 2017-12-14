@@ -10,6 +10,8 @@ dependencies:
     - bundle install
 
 database:
+  pre:
+    - cd spec/dummy
   override:
     - bundle exec rake db:migrate
 
