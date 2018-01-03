@@ -13,7 +13,7 @@ database:
   pre:
     - cd spec/dummy
   override:
-    - bundle exec rake db:migrate
+    - bundle exec rake db:migrate RAILS_ENV=test
 
 test:
   pre:
