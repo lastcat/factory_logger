@@ -1,4 +1,3 @@
-require "pry-byebug"
 # This is factory pattern(indentified factory_name and having traits) class.
 class Factory < ActiveRecord::Base
   has_many :trait_relations
@@ -78,7 +77,7 @@ class Factory < ActiveRecord::Base
   end
 
   private
-  
+
     # Return same name and same traits having factory.
     # TODO: improve algorithm
     def self.search_same_factory(name, trait_names)
